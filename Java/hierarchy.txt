@@ -1,0 +1,238 @@
+|   .gitignore
+|---.idea
+|      aws.xml
+|      azureSettings.xml
+|------codeStyles
+|         codeStyleConfig.xml
+|      compiler.xml
+|      misc.xml
+|      modules.xml
+|      uiDesigner.xml
+|      vcs.xml
+|      workspace.xml
+|------ZeppelinRemoteNotebooks
+|   Errors_And_Exceptions.docx
+|   hierarchy.txt
+|   Java.iml
+|   pom.xml
+|---src
+|------java
+|---------errorsAndExceptions
+|------------actions
+|               AverageCalculator.java
+|               FacultyAction.java
+|               GroupAction.java
+|               StudentAction.java
+|               UniversityAction.java
+|------------run
+|               Runner.java
+|------------services
+|               CodeInitializer.java
+|               Initializer.java
+|------------universityEntities
+|               Faculty.java
+|               Grades.java
+|               Group.java
+|               Student.java
+|               Subject.java
+|               University.java
+|------------universityExceptions
+|               FacultyWithoutGroupsException.java
+|               GradeOutOfRangeException.java
+|               GroupWithoutStudentsException.java
+|               StudentWithoutSubjectsException.java
+|               UniversityWithoutFacultiesException.java
+|---------ioFundamentals
+|------------mainTask
+|---------------analyzers
+|                  FileAnalyzer.java
+|                  FileStructureAnalyzer.java
+|                  PathAnalyzer.java
+|---------------fileStructureEntities
+|                  DirectoryHierarchy.java
+|                  DirectoryHierarchyItem.java
+|                  SourceFileType.java
+|---------------input
+|                  DirectoryHierarchyCreator.java
+|---------------output
+|                  Writer.java
+|---------------run
+|                  DirectoryHierarchyExecutor.java
+|                  Runner.java
+|---------------services
+|                  Calculator.java
+|------------optionalTask
+|---------------javaProgram
+|                  ClassMemberPattern.java
+|                  JavaProgramModifier.java
+|                  Reader.java
+|                  Writer.java
+|---------------randomNumbers
+|                  RandomNumbersContainer.java
+|                  RandomNumbersReader.java
+|                  RandomNumbersWriter.java
+|---------------resources
+|                  changedmodifiers.txt
+|                  randomnumbers.txt
+|                  RandomNumbersContainer.java
+|                  turnedlines.txt
+|---------------run
+|                  Executor.java
+|------main
+|---------java
+|------------classes
+|               Main.java
+|               Student.java
+|               StudentList.java
+|------------collections
+|---------------Bouquet
+|                  Bouquet.java
+|---------------Childs
+|                  Rose.java
+|                  Tulip.java
+|                  Violet.java
+|---------------ColorEnum
+|                  ColorEnum.java
+|---------------Flower
+|                  Flower.java
+|               Main.java
+|------------errorsAndExceptions
+|               Faculty.java
+|               Group.java
+|               Main.java
+|               MainHelp.java
+|               ScoreBelow0OrAbove10Exception.java
+|               Student.java
+|               University.java
+|------------fundamentals
+|---------------classes
+|                  ArrayNumbers.java
+|---------------filter
+|                  StringFilter.java
+|---------------main
+|                  Task1.java
+|                  Task2.java
+|                  Task3.java
+|                  Task4.java
+|                  Task5.java
+|---------------operation
+|                  OperationArray.java
+|---------------optional1
+|                  Task1.java
+|                  Task2.java
+|---------------optional2
+|                  Task1.java
+|---------------reader
+|                  InfoReader.java
+|---target
+|------classes
+|---------classes
+|            Main.class
+|            Student.class
+|            StudentList.class
+|---------collections
+|------------Bouquet
+|               Bouquet.class
+|------------Childs
+|               Rose.class
+|               Tulip.class
+|               Violet.class
+|------------ColorEnum
+|               ColorEnum.class
+|------------Flower
+|               Flower.class
+|            Main.class
+|---------errorsAndExceptions
+|------------actions
+|               AverageCalculator.class
+|               FacultyAction.class
+|               GroupAction.class
+|               StudentAction.class
+|               UniversityAction.class
+|            Faculty.class
+|            Group.class
+|            Main.class
+|            MainHelp.class
+|------------run
+|               Runner.class
+|            ScoreBelow0OrAbove10Exception.class
+|------------services
+|               CodeInitializer.class
+|               Initializer.class
+|            Student.class
+|            University.class
+|------------universityEntities
+|               Faculty.class
+|               Grades.class
+|               Group.class
+|               Student.class
+|               Subject.class
+|               University.class
+|------------universityExceptions
+|               FacultyWithoutGroupsException.class
+|               GradeOutOfRangeException.class
+|               GroupWithoutStudentsException.class
+|               StudentWithoutSubjectsException.class
+|               UniversityWithoutFacultiesException.class
+|---------fundamentals
+|------------classes
+|               ArrayNumbers.class
+|------------filter
+|               StringFilter.class
+|------------main
+|               Task1.class
+|               Task2.class
+|               Task3.class
+|               Task4.class
+|               Task5.class
+|------------operation
+|               OperationArray.class
+|------------optional1
+|               Task1.class
+|               Task2.class
+|------------optional2
+|               Task1.class
+|------------reader
+|               InfoReader.class
+|---------ioFundamentals
+|------------mainTask
+|---------------analyzers
+|                  FileAnalyzer.class
+|                  FileStructureAnalyzer.class
+|                  PathAnalyzer.class
+|---------------fileStructureEntities
+|                  DirectoryHierarchy.class
+|                  DirectoryHierarchyItem.class
+|                  SourceFileType.class
+|---------------input
+|                  DirectoryHierarchyCreator.class
+|---------------output
+|                  Writer.class
+|---------------run
+|                  DirectoryHierarchyExecutor$1.class
+|                  DirectoryHierarchyExecutor.class
+|                  Runner.class
+|---------------services
+|                  Calculator.class
+|------------optionalTask
+|---------------javaProgram
+|                  ClassMemberPattern.class
+|                  JavaProgramModifier.class
+|                  Reader.class
+|                  Writer.class
+|---------------randomNumbers
+|                  RandomNumbersContainer.class
+|                  RandomNumbersReader.class
+|                  RandomNumbersWriter.class
+|---------------resources
+|                  changedmodifiers.txt
+|                  randomnumbers.txt
+|                  RandomNumbersContainer.class
+|                  turnedlines.txt
+|---------------run
+|                  Executor.class
+|---------META-INF
+|            Java.kotlin_module
+|------generated-sources
+|---------annotations
+|   ~$rors_And_Exceptions.docx
