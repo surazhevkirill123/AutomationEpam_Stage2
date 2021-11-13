@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import Hardcore.page.AbstractPage;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.Objects;
 
@@ -76,57 +78,6 @@ public class InputData {
         this.itemLocation = itemLocation;
         this.dropdownUsage = dropdownUsage;
         this.itemUsage = itemUsage;
-    }
-
-    public void inputDataInFields(){
-        /*
-        String instances = "4";
-
-        waitForWebElementVisible(buttonComputeEngine).click();
-        inputNumberOfInstances.sendKeys(instances);
-        inputPurpose.clear();
-        dropdownSoftware.click();
-        waitForWebElementVisible(itemSoftware).click();
-        dropdownClass.click();
-        waitForWebElementVisible(itemClass).click();
-        dropdownSeries.click();
-        waitForWebElementVisible(itemSeries).click();
-        dropdownMachineType.click();
-        waitForWebElementVisible(itemMachineType).click();
-        checkboxAddGPUs.click();
-        waitForWebElementVisible(dropboxNumberOfGPUs).click();
-        waitForWebElementVisible(itemNumberOfGPUs).click();
-        dropboxGPUType.click();
-        waitForWebElementVisible(itemGPUType).click();
-        dropdownSSD.click();
-        waitForWebElementVisible(itemSSD).click();
-        dropdownLocation.click();
-        waitForWebElementVisible(itemLocation).click();
-        dropdownUsage.click();
-        waitForWebElementVisible(itemUsage).click();
-        */
-        StringToWebElement.StringToWebElementParse(buttonComputeEngine).click();
-        StringToWebElement.StringToWebElementParse(inputNumberOfInstances).sendKeys(instances);
-        StringToWebElement.StringToWebElementParse(inputPurpose).clear();
-        StringToWebElement.StringToWebElementParse(dropdownSoftware).click();
-        StringToWebElement.StringToWebElementParse(itemSoftware).click();
-        StringToWebElement.StringToWebElementParse(dropdownClass).click();
-        StringToWebElement.StringToWebElementParse(itemClass).click();
-        StringToWebElement.StringToWebElementParse(dropdownSeries).click();
-        StringToWebElement.StringToWebElementParse(itemSeries).click();
-        StringToWebElement.StringToWebElementParse(dropdownMachineType).click();
-        StringToWebElement.StringToWebElementParse(itemMachineType).click();
-        StringToWebElement.StringToWebElementParse(checkboxAddGPUs).click();
-        StringToWebElement.StringToWebElementParse(dropboxNumberOfGPUs).click();
-        StringToWebElement.StringToWebElementParse(itemNumberOfGPUs).click();
-        StringToWebElement.StringToWebElementParse(dropboxGPUType).click();
-        StringToWebElement.StringToWebElementParse(itemGPUType).click();
-        StringToWebElement.StringToWebElementParse(dropdownSSD).click();
-        StringToWebElement.StringToWebElementParse(itemSSD).click();
-        StringToWebElement.StringToWebElementParse(dropdownLocation).click();
-        StringToWebElement.StringToWebElementParse(itemLocation).click();
-        StringToWebElement.StringToWebElementParse(dropdownUsage).click();
-        StringToWebElement.StringToWebElementParse(itemUsage).click();
     }
 
     public String getInstances() {

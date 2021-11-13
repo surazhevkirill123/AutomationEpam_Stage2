@@ -14,7 +14,12 @@ public class AbstractTest {
 
     @BeforeTest(alwaysRun = true)
     public void browserSetup() {
-        System.setProperty("browser","chrome");
+        if (System.getProperty("browser") == null){
+            System.setProperty("browser","chrome");
+        }
+        if (System.getProperty("environment") == null){
+            System.setProperty("environment","dev");
+        }
         driver = DriverSingleton.getDriver();
     }
 

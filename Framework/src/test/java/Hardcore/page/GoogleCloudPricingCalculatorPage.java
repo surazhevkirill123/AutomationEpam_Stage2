@@ -2,6 +2,7 @@ package Hardcore.page;
 
 import Hardcore.model.InputData;
 import Hardcore.service.InputDataCreator;
+import Hardcore.util.StringToWebElement;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -14,61 +15,6 @@ public class GoogleCloudPricingCalculatorPage extends AbstractPage {
 
     @FindBy(xpath = "//iframe[contains(@src, '/products/calculator')]")
     WebElement frameMain;
-
-    @FindBy(xpath = "//md-tab-item[@aria-controls='tab-content-1']")
-    WebElement buttonComputeEngine;
-
-    @FindBy(xpath = "//input[@ng-model='listingCtrl.computeServer.quantity']")
-    WebElement inputNumberOfInstances;
-
-    @FindBy(xpath = "//input[@ng-model='listingCtrl.computeServer.label']")
-    WebElement inputPurpose;
-
-    @FindBy(xpath = "//md-select[@ng-model='listingCtrl.computeServer.os']")
-    WebElement dropdownSoftware;
-    @FindBy(xpath = "//md-option[@value='free']")
-    WebElement itemSoftware;
-
-    @FindBy(xpath = "//md-select[@ng-model='listingCtrl.computeServer.class']")
-    WebElement dropdownClass;
-    @FindBy(xpath = "//md-select-menu[@style]/descendant::md-option[@value='regular']")
-    WebElement itemClass;
-
-    @FindBy(xpath = "//md-select[@name='series']")
-    WebElement dropdownSeries;
-    @FindBy(xpath = "//md-option[@value='n1']")
-    WebElement itemSeries;
-
-    @FindBy(xpath = "//md-select[@placeholder='Instance type']")
-    WebElement dropdownMachineType;
-    @FindBy(xpath = "//md-option[@value='CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8']")
-    WebElement itemMachineType;
-
-    @FindBy(xpath = "//md-checkbox[@aria-label='Add GPUs' and @ng-model='listingCtrl.computeServer.addGPUs']")
-    WebElement checkboxAddGPUs;
-    @FindBy(xpath = "//md-select[@placeholder='Number of GPUs']")
-    WebElement dropboxNumberOfGPUs;
-    @FindBy(xpath = "//md-option[@value='1' and contains(@ng-repeat, 'gpuType')]")
-    WebElement itemNumberOfGPUs;
-    @FindBy(xpath = "//md-select[@placeholder='GPU type']")
-    WebElement dropboxGPUType;
-    @FindBy(xpath = "//md-option[@value='NVIDIA_TESLA_V100']")
-    WebElement itemGPUType;
-
-    @FindBy(xpath = "//md-select[@placeholder='Local SSD']")
-    WebElement dropdownSSD;
-    @FindBy(xpath = "//md-option[@value='2' and contains(@ng-repeat, 'item in listingCtrl.dynamicSsd.computeServer')]")
-    WebElement itemSSD;
-
-    @FindBy(xpath = "//md-select[@placeholder='Datacenter location'][@ng-model='listingCtrl.computeServer.location']")
-    WebElement dropdownLocation;
-    @FindBy(xpath = "//md-select-menu[@class='md-overflow']/descendant::md-option[@value='europe-west3' and contains(@ng-repeat, 'item in listingCtrl.fullRegionList')]")
-    WebElement itemLocation;
-
-    @FindBy(xpath = "//md-select[@placeholder='Committed usage']")
-    WebElement dropdownUsage;
-    @FindBy(xpath = "//div[@class='md-select-menu-container md-active md-clickable']/descendant::md-option[@ng-value='1'][@value='1']")
-    WebElement itemUsage;
 
     @FindBy(xpath = "//button[@aria-label='Add to Estimate' and contains(@ng-click, 'addComputeServer')]")
     WebElement buttonAddToEstimate;
@@ -90,48 +36,46 @@ public class GoogleCloudPricingCalculatorPage extends AbstractPage {
     }
 
     public GoogleCloudPricingCalculatorPage switchToCalculatorIFrame() {
-        driver.switchTo().frame(frameMain);
+        driver.switchTo().frame(waitForWebElementVisible(frameMain));
         driver.switchTo().frame("myFrame");
         logger.info("You went to the calculator page");
         return this;
     }
 
-    public GoogleCloudPricingCalculatorPage fillInEstimationForm() {
-        /*
-        String instances = "4";
+    public void inputDataInFields(InputData inputData){
+        waitForWebElementVisible(StringToWebElement.StringToWebElementParse(inputData.getButtonComputeEngine())).click();
+        waitForWebElementVisible(StringToWebElement.StringToWebElementParse(inputData.getInputNumberOfInstances())).sendKeys(inputData.getInstances());
+        waitForWebElementVisible(StringToWebElement.StringToWebElementParse(inputData.getInputPurpose())).clear();
+        waitForWebElementVisible(StringToWebElement.StringToWebElementParse(inputData.getDropdownSoftware())).click();
+        waitForWebElementVisible(StringToWebElement.StringToWebElementParse(inputData.getItemSoftware())).click();
+        waitForWebElementVisible(StringToWebElement.StringToWebElementParse(inputData.getDropdownClass())).click();
+        waitForWebElementVisible(StringToWebElement.StringToWebElementParse(inputData.getItemClass())).click();
+        waitForWebElementVisible(StringToWebElement.StringToWebElementParse(inputData.getDropdownSeries())).click();
+        waitForWebElementVisible(StringToWebElement.StringToWebElementParse(inputData.getItemSeries())).click();
+        waitForWebElementVisible(StringToWebElement.StringToWebElementParse(inputData.getDropdownMachineType())).click();
+        waitForWebElementVisible(StringToWebElement.StringToWebElementParse(inputData.getItemMachineType())).click();
+        waitForWebElementVisible(StringToWebElement.StringToWebElementParse(inputData.getCheckboxAddGPUs())).click();
+        waitForWebElementVisible(StringToWebElement.StringToWebElementParse(inputData.getDropboxNumberOfGPUs())).click();
+        waitForWebElementVisible(StringToWebElement.StringToWebElementParse(inputData.getItemNumberOfGPUs())).click();
+        waitForWebElementVisible(StringToWebElement.StringToWebElementParse(inputData.getDropboxGPUType())).click();
+        waitForWebElementVisible(StringToWebElement.StringToWebElementParse(inputData.getItemGPUType())).click();
+        waitForWebElementVisible(StringToWebElement.StringToWebElementParse(inputData.getDropdownSSD())).click();
+        waitForWebElementVisible(StringToWebElement.StringToWebElementParse(inputData.getItemSSD())).click();
+        waitForWebElementVisible(StringToWebElement.StringToWebElementParse(inputData.getDropdownLocation())).click();
+        waitForWebElementVisible(StringToWebElement.StringToWebElementParse(inputData.getItemLocation())).click();
+        waitForWebElementVisible(StringToWebElement.StringToWebElementParse(inputData.getDropdownUsage())).click();
+        waitForWebElementVisible(StringToWebElement.StringToWebElementParse(inputData.getItemUsage())).click();
+    }
 
-        waitForWebElementVisible(buttonComputeEngine).click();
-        inputNumberOfInstances.sendKeys(instances);
-        inputPurpose.clear();
-        dropdownSoftware.click();
-        waitForWebElementVisible(itemSoftware).click();
-        dropdownClass.click();
-        waitForWebElementVisible(itemClass).click();
-        dropdownSeries.click();
-        waitForWebElementVisible(itemSeries).click();
-        dropdownMachineType.click();
-        waitForWebElementVisible(itemMachineType).click();
-        checkboxAddGPUs.click();
-        waitForWebElementVisible(dropboxNumberOfGPUs).click();
-        waitForWebElementVisible(itemNumberOfGPUs).click();
-        dropboxGPUType.click();
-        waitForWebElementVisible(itemGPUType).click();
-        dropdownSSD.click();
-        waitForWebElementVisible(itemSSD).click();
-        dropdownLocation.click();
-        waitForWebElementVisible(itemLocation).click();
-        dropdownUsage.click();
-        waitForWebElementVisible(itemUsage).click();
-        */
-        InputData inputDataDev= InputDataCreator.InputDataCreateDev();
-        inputDataDev.inputDataInFields();
+    public GoogleCloudPricingCalculatorPage fillInEstimationForm() {
+        InputData inputData = InputDataCreator.InputDataCreateDefault();
+        inputDataInFields(inputData);
         logger.info("Data inputted");
         return this;
     }
 
     public GoogleCloudPricingCalculatorPage clickAddToEstimateButton() {
-        buttonAddToEstimate.click();
-
+        waitForWebElementVisible(buttonAddToEstimate).click();
         return this;
     }
 
@@ -140,7 +84,7 @@ public class GoogleCloudPricingCalculatorPage extends AbstractPage {
     }
 
     public GoogleCloudPricingCalculatorPage clickEmailEstimateButton() {
-        buttonEmailEstimate.click();
+        waitForWebElementVisible(buttonEmailEstimate).click();
         return this;
     }
 

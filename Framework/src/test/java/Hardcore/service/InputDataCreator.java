@@ -98,5 +98,31 @@ public class InputDataCreator {
                 TestDataReader.getTestData(TESTDATA_ITEM_USAGE));
     }
 
+    public static InputData InputDataCreateDefault(){
+        return new InputData(TestDataReader.getTestData(TESTDATA_INSTANCES),
+                TestDataReader.getTestData(TESTDATA_BUTTON_COMPUTE_ENGINE),
+                TestDataReader.getTestData(TESTDATA_INPUT_NUMBER_OF_INSTANCES),
+                TestDataReader.getTestData(TESTDATA_INPUT_PURPOSE),
+                TestDataReader.getTestData(TESTDATA_DROPDOWN_SOFTWARE),
+                TestDataReader.getTestData(TESTDATA_ITEM_SOFTWARE),
+                TestDataReader.getTestData(TESTDATA_DROPDOWN_CLASS),
+                TestDataReader.getTestData(TESTDATA_ITEM_CLASS),
+                TestDataReader.getTestData(TESTDATA_DROPDOWN_SERIES),
+                TestDataReader.getTestData(TESTDATA_ITEM_SERIES),
+                TestDataReader.getTestData(TESTDATA_DROPDOWN_MACHINE_TYPE),
+                TestDataReader.getTestData(TESTDATA_ITEM_MACHINE_TYPE),
+                TestDataReader.getTestData(TESTDATA_CHECKBOX_ADD_GPUs),
+                TestDataReader.getTestData(TESTDATA_DROPBOX_NUMBER_OF_GPUs),
+                TestDataReader.getTestData(TESTDATA_ITEM_NUMBER_OF_GPUs),
+                TestDataReader.getTestData(TESTDATA_DROPBOX_GPU_TYPE),
+                TestDataReader.getTestData(TESTDATA_ITEM_GPU_TYPE),
+                TestDataReader.getTestData(TESTDATA_DROPDOWN_SSD),
+                TestDataReader.getTestData(TESTDATA_ITEM_SSD),
+                TestDataReader.getTestData(TESTDATA_DROPDOWN_LOCATION),
+                TestDataReader.getTestData(TESTDATA_ITEM_LOCATION),
+                TestDataReader.getTestData(TESTDATA_DROPDOWN_USAGE),
+                TestDataReader.getTestData(TESTDATA_ITEM_USAGE));
+    }
+
 
 }
