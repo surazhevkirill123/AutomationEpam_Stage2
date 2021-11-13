@@ -6,6 +6,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class GoogleCloudMainPage extends AbstractPage {
     String GC_BASE_URL = "https://cloud.google.com/";
@@ -26,6 +27,7 @@ public class GoogleCloudMainPage extends AbstractPage {
 
     public GoogleCloudMainPage openPage() {
         driver.get(GC_BASE_URL);
+        new WebDriverWait(driver,60);
         return this;
     }
 
