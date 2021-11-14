@@ -1,0 +1,12 @@
+Hardcore\page\AbstractPage.class
+Hardcore\util\StringToWebElement.class
+Hardcore\util\TestListener.class
+Hardcore\model\InputData.class
+Hardcore\page\GoogleCloudMainPage.class
+Hardcore\test\GoogleCloudTest.class
+Hardcore\test\AbstractTest.class
+Hardcore\page\TempEmailPage.class
+Hardcore\service\TestDataReader.class
+Hardcore\driver\DriverSingleton.class
+Hardcore\service\InputDataCreator.class
+Hardcore\page\GoogleCloudPricingCalculatorPage.class

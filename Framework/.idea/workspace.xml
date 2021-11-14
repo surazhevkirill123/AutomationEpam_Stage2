@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1ed0b142-716c-41f1-a3db-c59d0ef27d29" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/Hardcore/page/AbstractPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Hardcore/page/AbstractPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Hardcore/test/AbstractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Hardcore/test/AbstractTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Tag Library Descriptor" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1xdOD5jCIjL6M3a80ATo4lm4w9z" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\STUDIES\AutomationEpam_Stage2\Framework\src\test\resources" />
+      <recent name="E:\STUDIES\AutomationEpam_Stage2\Framework\src\test\java" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\STUDIES\AutomationEpam_Stage2\Framework\src\test\resources" />
+      <recent name="E:\STUDIES\AutomationEpam_Stage2\Framework\src\main\resources" />
+      <recent name="E:\STUDIES\AutomationEpam_Stage2\WebDriver\src\test\java" />
+      <recent name="E:\STUDIES\AutomationEpam_Stage2\Java\src\test\java\Resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Hardcore.page" />
+      <recent name="Hardcore.service" />
+      <recent name="Hardcore.util" />
+      <recent name="Properties" />
+      <recent name="errorsAndExceptions" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="errorsAndExceptions" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.GoogleCloudTest">
+    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Laba7Selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.LoginTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoogleCloudTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HurtMePlenty.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HurtMePlenty.test" />
+      <option name="MAIN_CLASS_NAME" value="HurtMePlenty.test.GoogleCloudTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoogleCloudTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Hardcore.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Hardcore.test" />
+      <option name="MAIN_CLASS_NAME" value="Hardcore.test.GoogleCloudTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PastebinTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ICanWin.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ICanWin.test" />
+      <option name="MAIN_CLASS_NAME" value="ICanWin.test.PastebinTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PastebinTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BringItOn.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BringItOn.test" />
+      <option name="MAIN_CLASS_NAME" value="BringItOn.test.PastebinTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.GoogleCloudTest" />
+        <item itemvalue="TestNG.GoogleCloudTest (1)" />
+        <item itemvalue="TestNG.PastebinTest (1)" />
+        <item itemvalue="TestNG.PastebinTest" />
+        <item itemvalue="JUnit.LoginTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1ed0b142-716c-41f1-a3db-c59d0ef27d29" name="Default Changelist" comment="" />
+      <created>1630681375150</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1630681375150</updated>
+      <workItem from="1630681377756" duration="7592000" />
+      <workItem from="1630844983208" duration="4135000" />
+      <workItem from="1630850968784" duration="20991000" />
+      <workItem from="1631597085592" duration="18596000" />
+      <workItem from="1634135885221" duration="5665000" />
+      <workItem from="1634213313896" duration="1213000" />
+      <workItem from="1635147706618" duration="16439000" />
+      <workItem from="1635341808670" duration="4877000" />
+      <workItem from="1635428483491" duration="3978000" />
+      <workItem from="1635621589880" duration="145000" />
+      <workItem from="1635622642594" duration="382000" />
+      <workItem from="1635623355603" duration="2388000" />
+      <workItem from="1635627580257" duration="1076000" />
+      <workItem from="1635672639452" duration="3317000" />
+      <workItem from="1635681525478" duration="9442000" />
+      <workItem from="1635716122880" duration="3919000" />
+      <workItem from="1635757938773" duration="1304000" />
+      <workItem from="1635771880033" duration="9933000" />
+      <workItem from="1635857030238" duration="3801000" />
+      <workItem from="1636117406396" duration="9039000" />
+      <workItem from="1636349493430" duration="23471000" />
+      <workItem from="1636624240414" duration="549000" />
+      <workItem from="1636737496509" duration="24238000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1635719887230">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1635719887230" />
+    <state x="699" y="330" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1635618629294">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="699" y="330" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1635618629294" />
+    <state x="765" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1636368769784">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1636368769784" />
+    <state x="555" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1635239624682">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="555" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1635239624682" />
+    <state x="690" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1635794986739">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1635794986739" />
+    <state x="598" y="119" key="CommitChangelistDialog2" timestamp="1631600678766">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="598" y="119" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1631600678766" />
+    <state x="739" y="277" key="FileChooserDialogImpl" timestamp="1635758019033">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1635758019033" />
+    <state width="1877" height="283" key="GridCell.Tab.0.bottom" timestamp="1636908166544">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636908166544" />
+    <state width="1877" height="283" key="GridCell.Tab.0.center" timestamp="1636908166544">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="283" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636908166544" />
+    <state width="1877" height="283" key="GridCell.Tab.0.left" timestamp="1636908166544">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="283" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636908166544" />
+    <state width="1877" height="283" key="GridCell.Tab.0.right" timestamp="1636908166544">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="283" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636908166544" />
+    <state x="490" y="178" key="Maven.ArtifactSearchDialog" timestamp="1635348681945">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="178" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1635348681945" />
+    <state x="463" y="165" key="SettingsEditor" timestamp="1635801995849">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1635801995849" />
+    <state x="668" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1636737490490">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1636737490490" />
+    <state x="342" y="224" key="new project wizard" timestamp="1635758020670">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="224" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1635758020670" />
+  </component>
+</project>
