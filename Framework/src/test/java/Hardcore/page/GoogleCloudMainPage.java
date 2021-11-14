@@ -23,15 +23,18 @@ public class GoogleCloudMainPage extends AbstractPage {
 
     public GoogleCloudMainPage(WebDriver driver) {
         super(driver);
+        logger.info("Object created");
     }
 
-    public GoogleCloudMainPage openPage() {
+    public GoogleCloudMainPage openPage() throws InterruptedException {
+        logger.info("Process of opening is going");
         driver.get(GC_BASE_URL);
-        new WebDriverWait(driver,60);
+        logger.info("Page opened");
         return this;
     }
 
     public GoogleCloudMainPage searchTerm(String term) {
+        logger.info("Process of searching is going");
         waitForWebElementVisible(searchInput).sendKeys(term + Keys.ENTER);
         return this;
     }

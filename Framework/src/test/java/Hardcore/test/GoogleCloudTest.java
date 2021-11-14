@@ -13,7 +13,7 @@ public class GoogleCloudTest extends AbstractTest {
     TempEmailPage tempEmailPage;
 
     @Test(description = "Fill in estimation form")
-    public void fillInEstimationForm() {
+    public void fillInEstimationForm() throws InterruptedException {
         cloudMainPage = new GoogleCloudMainPage(driver)
                 .openPage()
                 .searchTerm(SEARCH_TERM_MAIN_PAGE)

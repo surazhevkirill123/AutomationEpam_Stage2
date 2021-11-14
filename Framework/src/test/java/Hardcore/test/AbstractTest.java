@@ -2,6 +2,8 @@ package Hardcore.test;
 
 import Hardcore.driver.DriverSingleton;
 import Hardcore.util.TestListener;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
@@ -11,6 +13,7 @@ import org.testng.annotations.Listeners;
 @Listeners({TestListener.class})
 public class AbstractTest {
     protected WebDriver driver;
+    private final Logger logger = LogManager.getRootLogger();
 
     @BeforeTest(alwaysRun = true)
     public void browserSetup() {
@@ -26,5 +29,6 @@ public class AbstractTest {
     @AfterTest(alwaysRun = true)
     public void browserExit() {
         DriverSingleton.closeDriver();
+        logger.info("Closing");
     }
 }
