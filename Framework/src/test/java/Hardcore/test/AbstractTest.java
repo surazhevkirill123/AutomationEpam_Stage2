@@ -10,6 +10,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 
+import java.util.concurrent.TimeUnit;
+
 @Listeners({TestListener.class})
 public class AbstractTest {
     protected WebDriver driver;

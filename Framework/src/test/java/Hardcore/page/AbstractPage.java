@@ -1,5 +1,7 @@
 package Hardcore.page;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,10 +15,12 @@ public abstract class AbstractPage {
     protected WebDriver driver;
 
     protected final int WAIT_TIMEOUT_SECONDS = 60;
+    private final Logger logger = LogManager.getRootLogger();
 
     protected AbstractPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
+
     }
 
     public WebElement waitForWebElementVisible(WebElement element) {

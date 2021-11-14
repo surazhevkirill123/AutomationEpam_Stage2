@@ -70,19 +70,19 @@ public class GoogleCloudPricingCalculatorPage extends AbstractPage {
     @FindBy(xpath = "//h2/b[@class='ng-binding']")
     WebElement textTotalCost;
 
-    @FindBy(xpath = "/html/body/md-content/md-card/div/md-card-content[2]/md-card/md-card-content/div/div/div/md-content[1]/md-list/md-list-item[4]/div")
+    @FindBy(xpath = "//md-list-item[4]")
     WebElement textVMClass;
 
-    @FindBy(xpath = "/html/body/md-content/md-card/div/md-card-content[2]/md-card/md-card-content/div/div/div/md-content[1]/md-list/md-list-item[5]/div[1]")
+    @FindBy(xpath = "//md-list-item[5]")
     WebElement textInstanceType;
 
-    @FindBy(xpath = "/html/body/md-content/md-card/div/md-card-content[2]/md-card/md-card-content/div/div/div/md-content[1]/md-list[1]/md-list-item[1]")
+    @FindBy(xpath = "//md-list-item[1]")
     WebElement textRegion;
 
-    @FindBy(xpath = "/html/body/md-content/md-card/div/md-card-content[2]/md-card/md-card-content/div/div/div/md-content[1]/md-list[1]/md-list-item[7]")
+    @FindBy(xpath = "//md-list-item[7]")
     WebElement textLocalSSD;
 
-    @FindBy(xpath = "/html/body/md-content/md-card/div/md-card-content[2]/md-card/md-card-content/div/div/div/md-content[1]/md-list[1]/md-list-item[3]")
+    @FindBy(xpath = "//md-list-item[3]")
     WebElement textCommitmentTerm;
 
     public GoogleCloudPricingCalculatorPage(WebDriver driver) {
