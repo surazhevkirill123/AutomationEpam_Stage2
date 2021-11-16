@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public abstract class AbstractPage {
     protected WebDriver driver;
 
-    protected final int WAIT_TIMEOUT_SECONDS = 60;
+    protected final int WAIT_TIMEOUT_SECONDS = 30;
     private final Logger logger = LogManager.getRootLogger();
 
     protected AbstractPage(WebDriver driver) {
