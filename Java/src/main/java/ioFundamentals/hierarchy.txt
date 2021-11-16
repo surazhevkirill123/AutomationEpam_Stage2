@@ -1,0 +1,18 @@
+|---analyzers
+|      FileAnalyzer.java
+|      FileStructureAnalyzer.java
+|      PathAnalyzer.java
+|---fileStructureEntities
+|      DirectoryHierarchy.java
+|      DirectoryHierarchyItem.java
+|      SourceFileType.java
+|   hierarchy.txt
+|---input
+|      DirectoryHierarchyCreator.java
+|---output
+|      Writer.java
+|---run
+|      DirectoryHierarchyExecutor.java
+|      Runner.java
+|---services
+|      Calculator.java
