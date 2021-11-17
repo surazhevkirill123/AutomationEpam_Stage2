@@ -22,7 +22,7 @@ public class DirectoryHierarchyExecutor {
                 new DirectoryHierarchyCreator(directoryHierarchy).createFromFile(path);
                 System.out.println("Количество файлов " + calculator.getFilesCount());
                 System.out.println("Количество папок " + calculator.getDirectoriesCount());
-                System.out.println("Среднюю длинну названия файла " + calculator.getAverageFileNameLength());
+                System.out.println("Средняя длина названия файла " + calculator.getAverageFileNameLength());
                 System.out.println("Среднее количество файлов в папке " + calculator.getAverageFilesCountInDirectory());
                 break;
             case DIRECTORY:
