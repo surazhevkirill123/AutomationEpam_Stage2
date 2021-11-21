@@ -1,4 +1,4 @@
-package threads.entity;
+package threads.entities;
 
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -37,10 +37,7 @@ public class CarPark {
         ParkLot toReturn = null;
         try {
             if (semaphore.tryAcquire(maxWaitMillis, TimeUnit.MILLISECONDS)) {
-                //LOG.debug("Car #" + Thread.currentThread().getId() + " poll from park #" + CarPark.this.parkId);
-                ParkLot lot = lots.poll();
-                //LOG.debug("Car #" + Thread.currentThread().getId() +  " poll " + lot);
-                toReturn = lot;
+                toReturn = lots.poll();
             }
         } catch (InterruptedException e) {
             LOG.error(e);

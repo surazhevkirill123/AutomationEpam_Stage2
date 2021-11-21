@@ -1,7 +1,7 @@
 package threads.creator;
 
-import threads.entity.CarPark;
-import threads.entity.ParkLot;
+import threads.entities.CarPark;
+import threads.entities.ParkLot;
 
 public class Creator {
 

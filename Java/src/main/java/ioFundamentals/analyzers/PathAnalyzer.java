@@ -14,7 +14,7 @@ public class PathAnalyzer {
         return new File(fileName).getParent() + File.separator;
     }
 
-    public static String getParentPath(DirectoryHierarchy directoryHierarchy, Integer nestingLevel) { //возвращает путь к директории, в которой мы сейчас находимся
+    public static String getParentPath(DirectoryHierarchy directoryHierarchy, Integer nestingLevel) {
         String parentPath = "";
         if (nestingLevel == PARENT_NESTING_LEVEL) {
             parentPath = directoryHierarchy.PARENT_PATH;
@@ -29,7 +29,6 @@ public class PathAnalyzer {
                 parentPath = parentDirectory.getFile().getAbsolutePath() + File.separator;
             }
         }
-        //System.out.println(parentPath);
         return parentPath;
     }
 }

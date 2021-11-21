@@ -1,0 +1,1641 @@
+|---.git
+|      COMMIT_EDITMSG
+|      config
+|      description
+|      HEAD
+|------hooks
+|         applypatch-msg.sample
+|         commit-msg.sample
+|         fsmonitor-watchman.sample
+|         post-update.sample
+|         pre-applypatch.sample
+|         pre-commit.sample
+|         pre-merge-commit.sample
+|         pre-push.sample
+|         pre-rebase.sample
+|         pre-receive.sample
+|         prepare-commit-msg.sample
+|         update.sample
+|      index
+|------info
+|         exclude
+|------logs
+|         HEAD
+|---------refs
+|------------heads
+|               main
+|------------remotes
+|---------------origin
+|                  HEAD
+|                  main
+|------objects
+|---------00
+|            348b2dbcd4ee6f322134e225c0d01b8894fdf3
+|            4c6c66b27fee96c10d1b0ad9f2cd623a635783
+|            503edd5b8bec04b144475a8544e3de94902641
+|            a01a6a6b7c288550660f97ee1ff58c2dc02d98
+|            b09710fe19fc359620367c1143a37e7db929f8
+|            ba66639a734d06e3d746d6a52cfcd3580b980c
+|            bfaff878b44baabf5aaa1981465737545c20f3
+|---------01
+|            08887c6231dd9b0411c83be7d91953e04bab67
+|            881bd0df42891ac0e05fde485ea71c470c9617
+|            a66bf29155ec47dba23f335d9bab66fa5eeaee
+|            c5d22034767db28b813965009a04c2471a9e59
+|---------03
+|            cdff4799efd8c990a9755b3548e700daf1ab62
+|            d831ae2171943ce9e877f6335f5fbe940a5b31
+|---------04
+|            c53d5f22e09a15329b9d3da23ee042092f3f96
+|---------05
+|            d12e08695834aa33f73046a5580c568cc8e781
+|---------06
+|            3bc2e96fd01e65373c7ec865c59aa5ad280cbd
+|            a68815d84677a2ea46b26fb9e6c41888892382
+|            efdb77e35737d0d3b80edb2feea1dafca9153d
+|---------07
+|            60e788deda517c0f9b3609feb6e0ec24ba4e32
+|            7b7c778ce5ef7cffbcb84e20c9990ad84e9fd5
+|            b056c6a823ebfb96aaa32e1a4bd322bfae49fa
+|            df1dd468b65387f56fcb6e2a53268fab886c26
+|            ebd7fc47f2b1ff39d4c8d3db7df47b76421b3c
+|---------08
+|            caf7a40aeb9d627cb21d47083b5c341151bf2d
+|---------09
+|            17a5b859523eb620df1d8ba9ace5e3c10110ff
+|---------0a
+|            0000fc449b371714b7b6aa5fb520d1a6f01263
+|            020df0f79b3f44b6b32d62eb26fce42ceeb203
+|            1d1e813222992c2c145258a1302e1509481945
+|---------0b
+|            2c5d6cbe11ad1a3c683d06548106c05737a0cd
+|            969c9eb9fee0ab496d681f40c73f723049b38e
+|            b23ae06bce0083f00e3a705b9bb6c8a4e908dc
+|            e43d78da27fdaee49fc7040cfac29c6b968ff0
+|---------0c
+|            408c72708ba7e61ef9bc0cb84bee832c7223b1
+|            6e3d18d31551123aa2a0b8f8c33700d6843ad9
+|            86f25575cccf8555d64d674c363f83fcdf5b47
+|            b81d7cfb5c4a27dde0845127b7fc23b2a3f5cc
+|---------0d
+|            f9802bec2af481d8caab723bc099ae74f406de
+|---------0e
+|            668241f1980c22839e7c8fc926c4c4bec2f67a
+|---------0f
+|            730dba204a6522339b0de7dd9703044de1e06f
+|---------10
+|            05ed4cdda0433c4be8777e32616342147c1349
+|            d0bc49a28c4dfc8f84f91e8e6efc7fdea7c18c
+|---------11
+|            8ce0a9da79288ef838bd5650be74103f4975de
+|            a3faaf750c5189e7d723af6f785e8ab4cd9ad1
+|            cacff6edc51ccb63eef6e4baa03b093a3c72ff
+|            f676483f7b3cdbea2e898210b9e38a592dccb7
+|---------12
+|            46867507f9742dc29735555f1165b01b0992f4
+|            9d97bdb84e1f53bccade2d358cee3b36268b41
+|---------13
+|            443c93b35f11f1d8517341794923c121e52175
+|            6acbbc129abe85534ffafd18e54d34f0031ab8
+|            8892eaa40a8dbc55ca39aed5808c483307d5cf
+|            f653b5733e1bdd7e6c1f7e52f5caf299ef88e5
+|---------14
+|            018e947309b5a1a29a4c56a5fdbaff0ccc0460
+|            0b5fb974e5506552507c3f59055dcabd30ccd9
+|            3e257e074270ef5a67b6c0f4028e0e0c8fa20a
+|            b43d5bb9a2e11d31f609649fe5976ccd95fbe4
+|            be583c31625aa80cd98a0139d6f1efc5b604f0
+|            c92c246d7ffd9dae028a8403bc13d3a41c63a0
+|---------15
+|            35179951b91d212cc81c36b0f6dc03c73d563a
+|            746d275650f930789d18710858d4016170b98c
+|---------16
+|            ac2246aa568839829ac8f5902994f1ed65b149
+|---------17
+|            6e6d5b3d64d032e76c493e5811a1cf839220b5
+|            81b1d47d7aae4ccafdfdec7e968473bae3e137
+|            b9fc0063a4e21ab1bd2b54b2bc52f89f70bb70
+|            f9a7c97539f2995f129832881a28808b68a784
+|---------18
+|            013fb811566add31f38d3e6ca1fc2f32d881f6
+|            e0e22f7d60f7139e2ecbb9de4f83f09b0b04ef
+|---------19
+|            9cb3f118884148bbf96095e8be00f37c1e637b
+|            ed53cdc326f13bced0a0d6f2984b02efad39d7
+|---------1a
+|            4b2f7874f649b18da0f75e0535a79401bdb1db
+|            5b510b4e61795ec6c768dbdcb62e48034909f3
+|            66bdf12edbadab0e092f5ae4f767d7f41b7c1e
+|            f11e48b84d5084b7744fba230a68240bcf154e
+|---------1b
+|            208a642dffc325a47b9fdf4f4bd2e39bd2308d
+|            afe8f63c3ce4aa9ebf1466bb223bbec0ebb9bd
+|---------1c
+|            2dd295cee4af67b75545f920a66a979bbd8684
+|            60dd191ea9510f298c9f0e7ecaaee0d0138198
+|            bbd2949c951eaa6ed673cd1c0e3a8ee30959fc
+|---------1d
+|            2827995e15b47cba79a4f5c2055cf692bde65e
+|            5e8da02591b561aa11d892d087f6d9f8ac201e
+|            977cddb0bb1d21ddbd7a0bacc5da316768d748
+|---------1e
+|            4ca45614f6f061fcd3be7c175d8f11573b8847
+|            7e6964b3a07bc9c265d10aad3c27388b7f2e09
+|            936b389fa71639715ee74febd220c48de1e434
+|            e373d261e9cf71096be7f1dcd99aa69645911e
+|---------1f
+|            1e5088d425c51978c73160a7b4a37314f1a6a4
+|            d2f6d1f507c9711fc1c69cec37d72e51a39673
+|---------20
+|            d1325fec92a48aabec178fc912befbc28a6f60
+|            e816363d89d5823f89dc148df6b00bbc30626a
+|            ef3dae89687e45b52fd2cb6093335dc9208298
+|---------21
+|            6e613edcd2c85f4838c7b6acbe2476df2bc923
+|---------22
+|            5acd2a74dca9542e2e75ddb8ead23e34cd16ae
+|            7a0347cfd827c6789229a373a53f5ed7a786aa
+|---------23
+|            02ff2fca4e2ef02d9f8f9cad5fd502fa52b68a
+|            04737225ae328e5f0070147b572ccccb5283a5
+|            43a7f43316b141f7de70bb90b3938892285474
+|            9883fe30c8df13246eaf5a42ccc585af908dfc
+|            d1afb9cb29daef5a307435ecee862472467685
+|---------24
+|            0fc2d669a7d747f1d42ed17dc9058531e92180
+|            24c8db4e1f0427c07cd89e2f08a5c78245646d
+|            c4b6e28b74ed722211458c2462491b2d7bc17c
+|            d5b4a473ca339db8f586f45ac45e1c35952770
+|---------25
+|            29f03e5286fb6930b25e95499d5d4ec67769ab
+|            33f13b56cc0e1cad7c10df8dbcd6e165e95ae7
+|            7aa140fb5b1dd57b3fcfdcd176213fc7ad4312
+|---------26
+|            4c51ba7b6409e0bb181a1df568ce86f235f847
+|            9e42fd5aa9397eb7f277fdf95453568ba23e23
+|            9f70d672324dba8f2e6792abf3cd2297429151
+|            b9a58484d21c22521201b605e81a807983e4aa
+|---------27
+|            26846e27250928e6cc616934c90a76d239ba1a
+|            424a1792660b0564d1afa7edc6c0332ee01c10
+|---------28
+|            84f85418020205e7808e9c3fce0c3cb6564e81
+|            85d903021d92b294fad4480c40d5b0ddfb3e4d
+|            88f96d17bff37e3f2a1c5947102f98f53c907f
+|            a804d8932aba40f168fd757a74cb718a955a1a
+|---------29
+|            a051c0e039ac76f7a18d646990a75e99d1482a
+|            b722ad329efb7f5d5fcb894ac477923975a2fb
+|            defe67ce6961349f516d8428a10c8dc76440e5
+|---------2a
+|            47dd95bb04201947e32fa30446d02ac379e56f
+|            b1e4511a3c26eda2f85dbfbd419be0f16308e9
+|            b67ebd01d2c4904c8b849f89ab970977b10144
+|            e342c15f5b43dc3750226e48d9d490982d9e4f
+|---------2d
+|            cb4c814c5748a610deb84828affedb80acee3b
+|---------2e
+|            08e730744b99bd36b63fe8c6114531ad27deec
+|---------2f
+|            66264caf10f183b4b2ca8df5d209ff3b234404
+|---------30
+|            41533326551068f6d0332b2cf4b74851906ec2
+|            6db6802a6b0d9d4c24eba6e72b639efb0fb35b
+|---------31
+|            2a43cc0a6f09840178526f09155b4dc842492a
+|            3a66be057b10a63ec6dd4e06100749d95578cc
+|            7cde2ce73bffa8d444e5097fca396457b1c04e
+|            dc165fce918cd6fae8a9571710f780f4c669c8
+|---------32
+|            9e967d096e48b5a68cb7d755c9f3307800f02b
+|            df206bb0a1f88a71f17daff9ee6a1f765c40c4
+|---------33
+|            4ff20cfc7a0918cfa0174fcbf10134e485a456
+|            6130fdd0d107840a9d7031cc313a4fcbae3664
+|            b78e93d6c6c22142aacccd74c60c6ba5a6d8b5
+|---------34
+|            37aa77fced257dd3fcbed379183715c15640d2
+|            6ce7ab13e0293fea8887367a2d73c2f35d0dc2
+|            c8ea49a89142afc48d09e2b8818b8dd6d4c0d6
+|            f79d6afa6fdb74808dc52dac7c31dba8bb65f7
+|---------35
+|            1905df8237106225c00c0d11f01c8fcef53c40
+|            808cf604283799769067e615cd0b4f31ecfa69
+|            8d084969edc326fc3088d4a88022fb9c39d9e1
+|---------36
+|            d90d395c51912e718b89dd88b4a3fb53aa1d85
+|---------37
+|            b4072deb25c750be1320e637b97dec8e8fb622
+|---------39
+|            35f4025cec5e707ba05763af2ddbc9aba8b66d
+|            36a5c251cac19bf2a7b48d314cebd227002801
+|            662bbe8af31555025acaac48dda873a123c852
+|            ac9b86cbbaa4037258e7a2e938383f31bd29bc
+|            b4751496ceedc460ab73111943788698b787a4
+|            cfd6b56730a8b054864d407e79c3559a2db43e
+|---------3a
+|            bb0d8b0144767eac6c7373c784d0c69a235286
+|---------3b
+|            3cb3b569a69703c1ed43d8de875ee70f5d4c86
+|            77b5be3bc6c285c6b629d63b7befaa63883d84
+|            e99c74b9ecad7000fc6d3ab489d545a0cca9b1
+|---------3c
+|            27a9e6d2dc2cad1300a6520056f47cd6ae3a00
+|            2e1f6275bd96c9825d41a85c03b193ea219527
+|            43d3603666c4028edbc4af912537c86f5eebc4
+|---------3d
+|            c44e4cf5acdc6e0505a7cf87fc94ab89da2e1d
+|            cd56e641236cbc3afd7c67aab8a3b2e693f1a2
+|---------3e
+|            322b499a54767c68e83d987c7ae215e1d6e181
+|---------3f
+|            7c5f05529ef79f575a1ae42b7f5f5d9e09213a
+|---------40
+|            00fe8080db1b66a38c34168bea35cd0b1835c0
+|            014f9df8f1571719e7e6e851e57257330e84e0
+|            2477140f4368b91704339597eaac335b858732
+|---------41
+|            db7fc97a091d0100ca817f092a34dbb1b00a44
+|---------43
+|            50db458244774608602acd27ef34960f6d0b61
+|            9e9e37429479b40704356bbdae114e5e20b587
+|---------44
+|            3d9eeba31f2c0bb07423266bb601d33a68b4ce
+|            3dd88d652332da244b4b9f894c61db87d10608
+|            48f72803b628e15fb2598f2945a995306d757e
+|            8ab9e8ba490f1ad340118277b98ea91ff4a1f3
+|            c636e5591dffc32a34dc289694a1f0612d91b3
+|            f77acb97ef5a290860f9211927e9cba2347511
+|---------45
+|            192b13937c8e4008c6bc7ea334c1cc3b8e106b
+|            e85bbfd0f5e85def14b896cfd4331675be2759
+|---------46
+|            b6e8d671359e8d9554eadf5b07dc5b9ec67e35
+|---------47
+|            351ed1d14aef317b2142e0eeb659c3c1cdfb82
+|---------48
+|            31464ff99add81c8841998c95b924e77092cd0
+|            6e01f21d0f4569966a3d4ce402ce263e011158
+|            8451a749ee708e5d6a8c78a204b7b3da1f7bab
+|            c764d48031b4b37b7cf064a84f381aa08fd5ed
+|            cafee4aec7ec41b263a1535027607ec1678d99
+|            e211a02cb1b702a22c72d211d199bba43fe500
+|---------49
+|            b2495a8c5c2a0e86d0a47696dea7a5546ec4e7
+|---------4a
+|            1f9a4e91a7c8e45d521046f32fd61d5e59206f
+|            4ebee1a4e22cd8bca34113b1738fcfd9beb390
+|            7d79ec1a9f8265de5052d75da15a1f0c72b4a0
+|            7dbb516b212b62a47532dea9994a4e5e3ce503
+|---------4b
+|            118ad4e849f2f33e41c3d913620eaf4bba5f56
+|            2ebd35fd7c7bb2d7fcbaff1359eb78afbaa479
+|            ea9a154c82bfa28080f2b2138389e2a3a8b217
+|---------4c
+|            3d12399faf4f7bd2a69687027138a68cb5511c
+|            c9fc0f7fae8a2c04825f3d41cb83b9ecce3736
+|---------4d
+|            7e64c22c23dcd59a5fdf3b3985727a3072b1c5
+|            9af7a6ce10cbbce6f669ad1cd5462496e2e2fa
+|            b64ee21a13ec5b78f9cd3be3118f90d24a44cc
+|---------4e
+|            a039a27148f0bec7cf3a8805f438efe7fc9c6c
+|---------4f
+|            76217887bfee290f19fc59a72f3225dda427a3
+|---------50
+|            1858c8a86b8c3a6d96f3838dbeaa7f1f353a26
+|            1873646ccb5647fa50f218c128d96be9f59094
+|            cc5aba93e0cbd11bff14aacf91187f4db42a82
+|---------51
+|            24ba863b372a32b4425703ed6ebca8908fa4e2
+|            9f3449366463336cc3808931d6615ebb19033c
+|            da4e7a7abe6b3180c578215ef26c0d77eccec3
+|---------52
+|            229ee200f8b3126a1240d92dd8a168535ba8d3
+|---------53
+|            42859fa4dfba0a9ef56961c5deb2906b922593
+|            90e6ac4376dffcdbef8ba0ceec7a7d625b622c
+|            d5b3e67bbdf6b54dee91646f14c46f7a9cefb3
+|            daf5e6c8cb8b55816c761b9239efed245e923e
+|---------54
+|            5e1ac43e70ad2ed9d2baa4cb3bdd2e87a9c11b
+|            b14cb854b6abec4a64feb1aa47bb8322d6db04
+|            cf4640577e4a04b9188f0b88bfce28fe0251b1
+|---------55
+|            5bb33068d435a1082876ac868a8899bb910704
+|            e11ee59d324acba20f0cab6acf1cc7762f4bdf
+|---------56
+|            502558ad4e96835410c6e79a0b65ffd23484ab
+|            9c2e5f4f3430e82d8682b247cd1981fccf8fa4
+|            9e4da91bda43d8ec780e3cf2e04606a72c1cdd
+|            a9ba5c50f37c2ec9d3d2a03df44ae7a18400e9
+|---------57
+|            0323ffb8fe16458ee84abf2a8626926609a612
+|---------59
+|            11914c4e56f078907116add1930fd5ae91c070
+|---------5a
+|            f7e7c036c83e36c8da33ffba46b54f825cf398
+|---------5b
+|            907f2c1a889c0a6338ba5557ea0a4b2dff35e4
+|            ebb29183a590808965cb95e351808cb936d495
+|---------5c
+|            6a45d9b65434d0b9b5b18c637a14e1943df7fd
+|            98b428844d9f7d529e2b6fb918d15bf072f3df
+|---------5d
+|            2ac9370d6fc04a423f9219f988c7605cd0b5ac
+|---------5e
+|            19ecc27ff1a9e3500579ff1e43007acdd39932
+|            2dde81fba639ace0ad7cf149e4f0016e953c68
+|---------5f
+|            f6630c7c66829fea029aa5b0d51277b766ff8b
+|---------60
+|            51b2942d412b1557a150bfa05fae786c59a01a
+|---------61
+|            6ebe24337b2b7aac51d5c06264aa247f6f3f32
+|            f5543f1e9d8fe2ed47951dc6da54467e79dde7
+|---------62
+|            0808b3054bb46714b4be2d252db2340fe898c5
+|            6c4de1d50bf286198518f9b5304835c7348b7f
+|            a27a411f4e882e556748245b498241733eeb56
+|            dfe6ae0beb59e2d532263c24580c4030b11fdd
+|---------63
+|            ce65386ad9d3f49c6888a4510f5d07e7c8fc36
+|---------64
+|            1c1737a821cf47c9e1cc38905ffb940e1e0b4d
+|            3bd482ef34fe96f94d1329991ee90da12f5b07
+|            9639d3d277e89068f9e6fcd5cba5c55281a43d
+|            f59e9cb101454b185837c6cfbf50a5cf3b526b
+|---------66
+|            17e3dd8b11eebe0c460e36fbd069bed14627a2
+|            18d867bb4248f26cd98c936e67645d04a156c1
+|            1ac176341a3109a73a905dd4b84fc4fa61d0a1
+|            4e6e2928b86296a79436430fa8bd7e9c20cba8
+|            d1fe39b71ca72fa7bf28d9b2985c07247be833
+|---------67
+|            53f692e32c08e4ccb07040754553451dcc5abe
+|---------68
+|            0e13790859b93cd8efb18d0f3d2ae3dd48db60
+|---------69
+|            04846a7b0584842e90295106ae63caa2ea1abd
+|            113119b60c3985017f039179b6819aade25597
+|            65e239ee0de2e7903b963e2a3171c81936fa00
+|            a5468eda2ae356f8bcb0add8a6a4b828d96ddf
+|---------6a
+|            91f3f624eb22c26fdb9fbd536970bd74efd115
+|---------6c
+|            0b8635858dc7ad44b93df54b762707ce49eefc
+|            e9d688cd667209af0af112716be6ba231c8e8f
+|---------6d
+|            e188daf518525aa42b2eaa0eee5bb7f2d3737a
+|            f5d8ce13738911b871ca26fb481c6ff5a3178c
+|---------6e
+|            18de226441447c392aea0cbe60dc984b7b30d2
+|            c31c75bb054d91725c6832dc4f42ce6832375b
+|            cd58c0194ca94af0f5df4407ac88c1c3aeb538
+|---------6f
+|            e5f7ada0fa8297744a43d096c20838ef217529
+|---------70
+|            b06a602fd170c51af7df41503f97e6ee1ecfd6
+|            b7496999b59f9d893eee0804b74c3c29341fb6
+|            ed3bd4f9cc25672c88029da5360603bd0e8283
+|---------71
+|            b2993d4e8356fd6aca6118eefc861af2d5b53c
+|            b7dd3a68b9b546b653622045a2bbc20d2096f0
+|---------72
+|            19deac3797dff336b607912810e9ac51508c18
+|            30ceb3412508bd43692b50b428b76f7e0c6436
+|            53ddf6bcad27f1832e5e58074811daf8e57efc
+|            c534e588e8bd9c5eb5c17987c85e109d001e70
+|            d0c0e30b14b7b998fc96b8f109987cbcc161a5
+|---------73
+|            3c9fc56b0961094ecda1c623dd5e79d3d35ff5
+|            43fba067c13ff891979adf71e7dabc167e9ffc
+|            45736a7a42a4cb07da4b70fe2393306886383e
+|---------74
+|            05b42ab236c2fedd3c84af659c124a3e83a5d7
+|            516f7900de9c26eeb10a42a488bee0dd3aae71
+|            5b4c484dffbb874ad86fbbdf21fa43b62dcc13
+|            81ad33e8bf0aa62a1a80de0b4e02ac03ca9547
+|            8f191284351a04d2d7cfc5b350f52a5ad7b195
+|---------75
+|            26ed41177c2ed1bc0641cb5cb1095be3bf9886
+|            57f97fb95446dada7e41658a4d3f197eba59fb
+|            e560459264d5bd1fb28573db16b3e51ba98e80
+|---------76
+|            4d68f302a913f396f91bcbaeecaa59036090bd
+|            a489a382e5bac46070dde6e15ab2e775eea69f
+|---------77
+|            eb0aed5e92791905869ffb554530b7e288ebb2
+|---------78
+|            8fa162118860672e72fecf7eefec2c8fd31f97
+|            b2cc53b203f0b97534bb1184cdc7b474339fb4
+|            ce4b04b228ff6b7f2eb601df88a82b3fc9fce2
+|            e3288b51a922942ef91b782b94804d4cc5f287
+|            ec8fab421b055d20029d27d0e3aa691885cf10
+|---------79
+|            1c945ed19cebfe6e701b72012d9006073a73ba
+|---------7a
+|            6d2dedc1e69c48da6b6af4e771b9885f7b1eaa
+|            ea9a06357707aa805a5f537de2be7356059f44
+|---------7b
+|            d819f64c52f0501c000f067959101a13d50921
+|---------7c
+|            12c06da28a60ddc94dedf7cb0bb20c16893f91
+|            6698238fc3696085ecccaca7f6b8c013689e8d
+|            e82c38ceda7b993eb3dde968f50e060a7f581b
+|---------7d
+|            5306745a892b2674c8b1983bd2e3db5716477c
+|            cb153474226dc904165ba6d8295f09f3bc8860
+|            cc5187b9a6a43d0a79fe26105f186397e34615
+|            e6f072d8c02edaa5f1222a47383e2f59fe4c8d
+|---------7e
+|            2e2f3453087faf6d39b7d94adc5f2a766064df
+|            a558ecdf37239646ea8ade69ba3ccea12b29fe
+|            c8000f07bd0bd6dfb70e1ca8896be0c4865bb0
+|---------7f
+|            565f00f70bd2a9f975f989e9450217b3e33d48
+|            574e9ebc339b018502af3495b51180e9dd3aa9
+|            8e7d12f4fa95d598d73e8ce3201edcced9ed7e
+|            9155a7cb82a7924803477b0ce051a75ebdea90
+|---------80
+|            5d1d3d3a632d6c50205727eec9d8555a690447
+|            5fd953b35f418155b2c61910e4e63bc610a5b8
+|---------81
+|            105c6176fff7ae30f68a040f2f6b507228a24f
+|            4aaa439f80558f35b95c8a2810ff2be1edbcee
+|---------82
+|            1517059baf3d9198f485020a823aac555adb00
+|---------83
+|            570c97a85461c9e176f014d4903cd218fa881c
+|---------84
+|            ab9561a4722cf838270a2f48a7445a24a16ec0
+|---------85
+|            7b7f2f3c3c6bf4f7440a304ef187a4f8c009e5
+|            af79b72e2c3f43ab105c038d90c52dc6c96742
+|            d7f12f6730e7b07474b33e3ebec730078deffe
+|            f96cd71c976fffffb658a97d7ed48e692db798
+|---------86
+|            1b3e92f8e8ed386162af1df2903413ba15657f
+|            4376dc510adf43396623ccd862347bf87a186a
+|            f673ac15053a4dc274428d2ee4de37d317940e
+|---------87
+|            385a01056ea8cac86e0b5b505d53e262f40c91
+|---------88
+|            aa9a7fbe78a2065acdbba41baeb50962c7074f
+|---------89
+|            23ee8e9cf886e28eba553a559b187565fe6b7d
+|            7a71ba0253c43a81a722d98bf1643549bf9ac1
+|            d5decbdf3f867a61d720241b9b900e82f4d882
+|            e3a1c71f9c88918a5b3a46598986a3f6b54635
+|            f7ff030d487d7b386fe473f00e12cd8b37adc0
+|---------8a
+|            6dd161ae690b97b8dc9c714a4dc00fdc3779eb
+|            caa7ad469d7f3d48f3996652e7fb45842f2699
+|---------8b
+|            008d8c4dc3497356f49fa1f2e24649959ea5bd
+|            0f5ef7af1952e6cf5dcd1af79e6b7db09e411d
+|            20043ccff4553d41018edac38dfc7b4bf0137e
+|            4c4bddd5525f40deee226a5ef23036573ba168
+|            5f8109472f22d9cba714fc3b0857a92f9d94e6
+|---------8c
+|            1e2dc05849acba8bbf43260c270bf0da8c5f07
+|            5689d51a4e89fbe3595ee3224528454da5ebd8
+|            a096a59195948303760dc19787dac055a5fc14
+|            c27e4563796edd5b5ac520dc8b2bd6c98a0abc
+|            dca857a2804f8c250ecbc15c0ac6076afcbde2
+|---------8d
+|            57736e28a28b36b8778fa61e8f304cbeb1bd6e
+|            859d3fa4caa9c172c1355d929b45aaf50e4eef
+|            a26a4c826cef3307f1267156c09914bf40bccc
+|            a78739f63ef4374feed4cb93db697b56929b94
+|            e95f78d956e53b0bae871e191c5edff1a7d6b9
+|---------8e
+|            2b29b8458c9697b26378ddd9ee9a146b139330
+|            32d8d1f0ceb3ba3f6d3fe96755d57a68aec572
+|            a2dcc6ab83edb679cc03abd879fcaea287ddd5
+|            bc91ffbea4ea368a319a2d2230bb2f0f16f242
+|            edbd2dbaa3f465e5c57674e77602b97027ce1f
+|---------8f
+|            25e7a4dfde92a2087390f18fc82abb926859f8
+|            a04b0980830e112dd532afed41ee3cc2d783e8
+|            be6a35657df20db8e6711f15f921f406c28bf6
+|---------90
+|            30f17c057749c8bf581dc34dac6e4c2cc9c41f
+|            7556222a046515460d64d07147800dfd2c8833
+|---------91
+|            0b16871756086d2786db1ae6f2e3bd044af606
+|            70d1ea9551fce910106f59e4992bd2d4296335
+|            9cdeb063ad857de2691e86463c90cb6110fe80
+|---------92
+|            030b1f035ea3b3d5a4cc10cfdc56d8360c9112
+|            6ba4e0c0dca49075750e36f297f2d9d7f7c30a
+|            96a4e5c683270d07e66a7d488c6c682e9bb805
+|            ae30e027817649f5af16c126cf8da77c14edfc
+|            baca7a985ff9ef468c27bc2ce6df44df512b43
+|---------94
+|            15b9838287ef53958d48a4f2fe58ea64c88273
+|            1846166327ac5ebb5d03b0da6a0aec8c12a5ad
+|            59f055b195ed60fbd4c045902fa44eb2841e95
+|            dd3df9ac0877e7ddff09efe581583bcb42e998
+|---------95
+|            007505430f9dabd3255b808da62cfcf93412df
+|            658db82731fca6641a8ddf9726d33efaf38dbf
+|            8c7c5ee39e9003a2b0d81c9e31974434ddddd3
+|            93189d471c8bd7252ee84609689632154f5d34
+|            b51422e77c6e3c4b8b7cb6dbf4725d1915bb1d
+|            c6ead07643048986cdcc21912fea09b6d15615
+|---------96
+|            983cc4fb4528c464f08cbdc2365c484f4a7958
+|---------97
+|            38f71ed7f2a17a484a26cd834f89932a6ce2a0
+|            4eb022e0bfaf89c1e26f0dae2e8cd758235c83
+|            8d783477fcac745a606403dea790fb98517401
+|            c7cd27ef7b7119710e4016d3531ee561085166
+|            f2ea1aaf5c54ba5bd4ea54f21c4bc888e61cc8
+|            f84e88d9ff41e5cc37879351e50797f30998e8
+|---------98
+|            a930c568f8fa6f3cf5ce7a1cb9bddc58516a75
+|---------99
+|            bfa49e88b89360b87094b5b50f6972007590d2
+|---------9a
+|            1feaa94883c4fc8e4b0d71fcedc1d6d9a2c913
+|            8829d8b2a28101ad88918fa650fea6b940adaa
+|            d40520439f4789ff5481ac08e221707b93e7ae
+|---------9b
+|            1f38cc5a62bd6523d9686d1ab44915bb80c95f
+|---------9c
+|            241aba11927538377f4872161e5cd165fcd523
+|            9e547d3b2ae5c97282cd0bb28041954341a00e
+|---------9d
+|            45f6225b472d9809f7e2884551e71ce438a6e8
+|            b546cce2ce22b817b43096736f8d68577fa7af
+|            d6294049eac745c55e9101d5cc40e266bc301a
+|            dd5a310366a92d817ae4a04c8b98af76162dc7
+|            e4f2034a9f657e02b3661ba8ef3815d958b322
+|---------9e
+|            651fb28051419a84e2d15408a576b020f7241a
+|            7e19cd96385109fc1ea3e17e8eb25a3b1a3000
+|---------9f
+|            14a6f058536b61a748f33aadb92560475d91db
+|            8b3746a5bf27aff932446357f63d861aecdb46
+|            9c9456e29106d1348c5de48f243f41472cc5ce
+|            c4e00c7d14e5f6f6800623d158035488347d99
+|---------a0
+|            0e856f57ebf7d35ecf2572483f2eff60aad04d
+|            1b6d8086514ae4000eba4eec660e1394953b36
+|            e2f856cd07da47dfcc943f36d8e992073d3df9
+|---------a1
+|            0c206f25c1a3bd10e36e786dc3e8c2393d5917
+|            5c34b367ceddc7597ddbb91919f5dca6dc656c
+|            605fe36673ad19a759ea3705d0c34f1a680490
+|            6ae869289c4531df52374c6091b49a6e4651b4
+|            90e9690d7251667ed96229b3d557b5c7eef6da
+|---------a2
+|            2fa8e8f50f574572c753cd69babd97c938a54c
+|            d80a9044f38833cb728a69c88294ce3fd007c7
+|---------a3
+|            1dd9171e86f199e9317e78822dca383d8d216c
+|            c07ace87067356f45169a29bb9a3a66222b760
+|---------a5
+|            05750b83efa5a4fee86a6a06a9d700b8e94e60
+|            214169bd2e279b37bef0bd554c8f933586d02b
+|            5e7a179bde3e4e772c29c0c85e53354aa54618
+|            c0325c8ba4878026c5eb8db28d6233ec9fcbc9
+|            c840c1c22e9beb990d480eb7a29305893f5aac
+|---------a6
+|            2baa4d8075e50cc10fd9a68c17dd66ab343b64
+|---------a7
+|            18da12c7c4e91abecb98746253fd9eb4a02a65
+|            be5cdf3784a1644abbf513364f9bc5d21cdacc
+|            fcc3b8821677a8b2ec0063876443f145ace702
+|---------a8
+|            36d07d1aadd741abee74e1adbc9af0ed9cb2f3
+|            5faf73baae63c934b0bc6ddbcf602f45164b1c
+|            814e7bc274506da09216aab96fffa348a8b035
+|            c5dc2ef3012ad03b2956bf7ebc429ceeee8f30
+|            e40a89c5eac1dcdde91925efbb563eb71910f7
+|---------a9
+|            591c42da34ee86c1516778d0bec79fb70246de
+|---------aa
+|            00ffab7828f4818589659c804ec2cfd99baed3
+|            66374a48678b353f31785525499df6fb7bf5d9
+|            7b6cb4c57d90e995ea4b87c64e9b9c41ace783
+|---------ac
+|            2f029d391c79edd57d639a7af029548d303893
+|            441a29a956b2844cf7470d029b6b01289c2718
+|---------ad
+|            d2df2b087374d47c3d168deb9d8691effd67e9
+|---------ae
+|            24e1c11d98a4c818e63d9e1d3b6d8174ad6d7b
+|            5b3ef244fba3c0c7752536d377c6ee22774cff
+|            696484d6707496dfe767b5d53bd895813bc9f7
+|            6b3656ab0f90dc28f1e42430c2d653021afd1c
+|            6fd53aa5c5e41187c4c6aa1eb7267948cd5481
+|            76ed69089757b69d943a17b935135bc1a1c3d9
+|---------af
+|            0cc1693a628def9b0a2feb07136be024356e30
+|            17dbf6471a456541a02c8af79a94bca6462e6f
+|            6bb8f20dcc397436c3db4d8c8d9290b4916e84
+|---------b0
+|            408483f8dabd51dfea956e51d6d38fb070dbe8
+|            614034ad3a95e4ae9f53c2b015eeb3e8d68bde
+|            c7373838c1fec10c8d547ea9c4dc1c8a6ab1c2
+|            d6291164de43a8e4c4dfba970a0614f981ddfa
+|---------b1
+|            3f2ec07fb32c163e62ddc402bb77e7d68d152f
+|            7029340000123e7cd745a95b87abb215ea5c70
+|            ee78f78b13b9bc65ef273eb1317086794b8ac9
+|---------b3
+|            a8409e68fe81f3e075c849c36c9bcd667cfd14
+|            b251fb9d2674be789f64f16b54ca75a155b764
+|---------b4
+|            a5dd4d3283ba106f6c1702a9c962a4ba8c82c1
+|            ee96e85addffaa47420079205b429f8dbbc002
+|---------b5
+|            6bd5aaad9dc6c7af6f13364b9d1c01a46b0f5a
+|            de26546cf463b27365ffbd1b510d020dc5d4cb
+|            f85ddab0c00775b34f98fc86323c435c0a93f8
+|---------b6
+|            3b642cfb4254fc0f7058903abc5b481895c4ef
+|            60a3d8169f8fbe1dbf7c0b2034d56d251d9269
+|            75426cfbaa7a7d7b81d3dfbf614021dd6ce256
+|            e9f8eb46617f3cbe3747c4d984aeca03d93630
+|---------b7
+|            1f8db50814963bd05b6ff87ee58f7179da442f
+|            fbf6c6169ca1ac13a37156f0604ce71fe573ba
+|---------b8
+|            f63f051d7e5ab0997125ad58de2a3b90d305df
+|---------b9
+|            9617b7bebbb6112bee599795cd1ac3be2be6b5
+|---------ba
+|            7657651ae35b62db9f575b070e47f66f2b7a3d
+|            8b10014ea0fcb9b37972cb1b05f2befbd9ce3a
+|            d742839f49196732ebbde108936476b462f2ce
+|---------bb
+|            03ec326cff1375175162fa38cc60adef94bb8d
+|            60bff8df37a007bf9c7ec7d6356895565d2a72
+|            a6b8d40a5d0b3200a18fcf641a0576b7006dba
+|            ec27fba3c2494720a09c19b92e0e0897167759
+|            f1ac7ddc01eec192775f94fb842f2d4915255d
+|---------bc
+|            2a5f2a871570a79095e78f7e3390b398fd231a
+|            4d10de7307f15f6ead2f1a884c43fab4e72496
+|            6177144bcdd494099cd0e63c986000917c6d86
+|            6ac65d094cb55e4bf34e7b0b4a73062ffc0e97
+|            f5ffa8852eac332feac2081543e4134bef775c
+|---------bd
+|            12142828cebfd6b605fff99f9d63b78e64b17d
+|            5395195dc5416820e78cbe7fda703f3ba4c0f1
+|            ec8d8eb13ebd2960f8fb700d219aeb6fcb075d
+|---------be
+|            07c7191d64c5dbbf51ba59aa9f9f5834bb3390
+|            62107c0be72fcf8005d7a92b6712a33a19bb83
+|---------bf
+|            14e69de448d905de9aa4750748d379d49a07c7
+|            1c72751173bfa2d269721fba02f9ec4575023c
+|            2244fac72c9a6a176f87b0f9617b1865835224
+|            28a18c09ec71dfb2859e72103ae7bc83c95291
+|            5bdc9f3aa809da6c41d205d85181c1ad7aee1d
+|            cbe2321badbca35bdb7e257ab360b728b7a343
+|---------c0
+|            6f9997b35533eda13c5d2a0e2763ff6729a140
+|---------c1
+|            1611bb327bc84568c3348c39e1ea3d38b73323
+|            17be59a9ecd1da15ebf48f6b7f53496302a7cd
+|            7300645e324b28e747c46e8c441769bf2b1233
+|            a84a35d45334bf77bb24e1eb6437ab70a42408
+|---------c2
+|            7223f128d6e826ebb1c8be752826cc5a4a21ca
+|---------c3
+|            0b2e40f0397b38b2a3726d380d91857f783f22
+|            2d018dcdbc93233089622200c82fbf5c9e52e6
+|            57a2fec348e213ab97d15ba034f38356c4865d
+|            6a324398f7fb72a3e3dbf11535ebdbc6ed016c
+|---------c4
+|            c944587ab1c183f57aa573a2d87aea37c3621a
+|---------c5
+|            9b0c2286ca5cd7b74d88ce8f0c5abcee42a943
+|            a22b18de8308a82986cdfed573cfb87ea541d4
+|            e7bde103b70bea0c97cb79e2f04a8a857f086f
+|---------c6
+|            21d2ee0dc1c4727f142623c1969e02ae6cb93c
+|            b57236528625a940e8a0483bdc1239c9d57f78
+|            e66fa29fbbcccb84b5dc7a8e089054c31daef2
+|---------c7
+|            15f6fab4e7f033ed6c933d951712ef4a8bf084
+|            1dc2b04808abd33e289efc5484a256d53fda2c
+|            e1551a2a0bb83284cba22a2434e009e0cbedd7
+|            e234c1238d2dac6186ad973ec90c80ab6909b8
+|            f98989695e263c9ce2ea9d0aedbd5aed22fca6
+|---------c8
+|            3c2347a8a4c0bd0b6defac34083715797cb71e
+|            40163ec433ce0bcf452bf6d41b88e8f89dd5d7
+|            7daba0b3d38b61e4c7d7e319d6299dc3837630
+|            c60407348011b7b3db813ddab134a0c75a6c16
+|            df068433e51b8369568ab476fa982ae1a0338b
+|---------c9
+|            c8d75cb32c67f3513cee07e19e7a198eae8977
+|---------ca
+|            00b86225cf331150977f36be87fe8ff9aa1d35
+|            060fbc1031d790ace3b1dcc843670fd2ff2b8c
+|            5e048fd4a59c74c4a6126d63e83d2beb669e0f
+|            948f8c07d638865422c3bb19996428ad0c68e9
+|            c52c14df29cbb2db056eb520b8c4abf9434c4d
+|---------cb
+|            6360885299e73e15b3e3045e9052e86808eab3
+|            99f17843d2066109b9db5c744adbac54286e09
+|---------cc
+|            50ceb9c9e1e74cd359e06b95686ec73ebf2a37
+|            5fb49e13a3d536c5674b1541df1dc23a30e14c
+|            e7cc23ef3f8ad19d24226b1af32548e30b7936
+|---------cd
+|            00632917d8ab918af1c6ff6f17629223591c97
+|            ad38297bd7ae05c3c1d59dc8541e2bc5eeba12
+|            adfd00eeba53646bceb1dead4fc634278fd89a
+|            c29f449be07a0529258fad782631cf0309b5b0
+|            cc4f4291e39fb717aefeccdc487702a815fa42
+|---------ce
+|            9a11b95ba6398ff3fd0034724dfd17e0fc3654
+|            a74f2609ec17554939e88ce59e556041024899
+|---------cf
+|            100793df6b23fe315793e01985b2dc3b494e4b
+|            13af80a6309f992c872f3ab4be8448a31e9f42
+|            3b5b3aea1493a50fa5f2ce37359e831ae82e85
+|---------d0
+|            37a48ebe875dc5f0f6d0bb9fdc660e69c01dbf
+|            fb53ed5d6afb687bfd0f9066dc486f66f652f8
+|---------d1
+|            e81676178bd13e2fa28d207ad6f16991cdda49
+|---------d2
+|            3bccf4069544d775d5833fc1ca9ca6b5bda194
+|            421e19512e61573ff32b2e9b402f545386d659
+|            59aed92c2dbc8cd80865c548f69ecb7293e592
+|---------d3
+|            03f16d452e949e305b4aad042315d6aa64bf34
+|            1a25aee2e07ad13cd261c0df75eb7f4cfd7df9
+|---------d4
+|            4b7ab391737c5dcbd2690eb79cb94d71ff2300
+|---------d5
+|            4a1fb5bc6fa64c9d985337a81f15fb77d6655a
+|---------d6
+|            9199cda9a5a56a6f2b5c6a554e5b37d706d773
+|            b2cbdc77f56a586904fd91f7685396a373c0c4
+|            ebd4805981b8400db3e3291c74a743fef9a824
+|---------d7
+|            08a982a4c936ddde378a6d33ff44ebe59f428e
+|            22698a88becbd03b6f051450d9429bb3587b33
+|            3c71374377d98aa24e926944d6b13b990688bb
+|            59363aa369240b6d1e678233c124d8ba1576fe
+|            71782d990db332e048ef264858e9eeccc3b439
+|            9f36fbd82f8e269082440e80d1e9d05ca1dfa6
+|            b75c4047823b3b22dc4ad70c92e53d3c16da39
+|            bd138a5fc78cc9aebdba0904e5e5c65f93e856
+|---------d9
+|            394bf0c81499e26b7b4c9919fd9cdac5700edd
+|            9530124663a34cdb29b572eb07fb18f9900371
+|            a55ff2c773fca5bbe59add7659038029560a86
+|            c03b5b3e5acb69528694071ba89759fa2739ac
+|---------da
+|            8a03792224f4bb6a67c9c57eb5d55038be7ac1
+|            ba995c4f516dad89b76c25e18f13c30eb5ae9d
+|---------db
+|            78047c2c38ad972b66d6bedc41b29039ef0216
+|---------dc
+|            2f36f2d60c31b79fbd5f0fbf8212e265e9b008
+|            754984d4b7a22a05835466c818e40bdd28a66d
+|---------dd
+|            488358d73d18499503c72c5a4c01bd0d42a47e
+|            5f63705fb6720852026fdb390c9ecc7d67670f
+|            b0199ec3288a5e0c0a55d82c91a10b656997f1
+|            bd23d8c6394aeb01d5830b169281d63e8129d4
+|---------de
+|            d52373e98ffdb9412ab9649cee99084cc3d56e
+|            d57857bd371f10971ff917c50501029042cf33
+|---------df
+|            025f4b2a49c53ec0e460f66c612adfacc080d3
+|            53db1b6570a5f33d3c4ac0e489d255be1d43d5
+|            ca77ded7e3298a7b5c867b21874fe167e6decc
+|---------e0
+|            220feb40da29bb3b46001cfce708cba1eaa58e
+|            5ff9382912eec5e43351024a066cf3b11ca320
+|            64a8225500cf38dba2feb6bb27e4d4d0b473ea
+|            92ab24977b8f4700c84caedc0e75fe40391394
+|            afe3ea0c4194ebde6339ed6450ea4e8aef3d62
+|            e190e0771f812dbd0c5a6cd48580d17e8fe451
+|            f1c32c45e8e32c561b41f094f0062720316295
+|---------e1
+|            f3222c9e44d2cbb382b9da9acc33c96df8801f
+|---------e2
+|            7fb743f7ceeb62a783e5167edc1d39cd2680f1
+|---------e3
+|            429fbd1a226e123c578f88164015514752b6f3
+|            64ffd9bb82f903f75f80dc82a18c346e0dea1f
+|            736acc168eacba4d272cd30a6fb5f2ffcad406
+|            ead00884d008f5013022ae6026e16ba74a4046
+|---------e4
+|            7e1a4a192f305976004cc0834b0bd64b2c6ae3
+|            d7e854343bedd65cea711e37f3e7411d9d95b2
+|            fe219bfba957217f1c88d89b904b986e3de42a
+|---------e5
+|            1f9c87b2ac4560870459bd00eea9977e0e3332
+|            3bc370a5f83206e6679395a3ed5a614d220778
+|            3d63c556ab7b6221e9212f499c52ec3d6a126c
+|---------e6
+|            01a32a27b676ddb8cfa432af0515c1d9423b20
+|            1cfbfdcd826e6a399a47e3ab43340e5246d03c
+|            338b3ce7b5e7fcf6ffe147ffc4ab3a34f7e466
+|            9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+|            c6fa9d41cbf1008681753dc6a0aa4bcbd9214f
+|---------e7
+|            024a322bbc9f1464010c5f3ba03b23c9c8cdad
+|            854fbe24e129a661635a40a11908f9bde4d2a0
+|            bb932681f65d21a31f7f2a52c2508abde1ea59
+|            e9d11d4bf243bffe4bb60b4ac1f9392297f4bf
+|            ebd53def94e511150ab000e3cf992db39c3259
+|---------e8
+|            340ef8d68f586c6fe86e04fb540f57787d64c5
+|            a53591c719a30a3f992cbaeb3e296a98a25351
+|---------e9
+|            5ac6b13989bf6f993156ae5058088fdef68642
+|            6534fb27b68192f27f985d3879e173ec77adb8
+|            94710e34b8505947f7619298298fcc483c8bf3
+|---------ea
+|            0cabac8f01058ac4b7a7722012f0219c588dc8
+|            26d8aa98c54d4618331bb002bbc5b64592bea2
+|            3223251a64f91b2ae47115fea8cd2cdd61b0e3
+|            32cd8adc4fa4594e50ecc3a85286b34c7a9101
+|            487cf5a8585ca60132e11293fb711c4d3b0719
+|            951189970a8090d54c12b10165a8e17fd1b1a2
+|            b40b3297178f1368697ad576d5614a378e7575
+|            dbc02449f9c078e3df4d526d56929c20c79006
+|---------eb
+|            42b91e4d9f42c9012499684ae15fe595ea3128
+|            4535d9f2a9daab1b0ddc9c15845ed852ba67cf
+|---------ec
+|            2b3e0afe534dcecf5684ffff9ed9dd779dab5c
+|            f2da27eeb77b0454c2c9339d5b702b64926537
+|            fd569cd78e17cbe3e68166a387f94a2aaefebb
+|---------ed
+|            2b65de77a303a9ac362ade4bf35bcf0302270e
+|            b6537dd2bebdcc339a23efa7461fd90e7251eb
+|            c3741c1813921b6882a711c432e13669c85ec9
+|            d20b99383e5ff3d7efef82d9148a2a576d913e
+|---------ee
+|            474398742133f9b72c1b23940cbab0cc56306b
+|---------ef
+|            28298c00fd8627f818ce44fe5a75a64b5782ae
+|            f646f75a549449292dfa23eeadd0228a7e5b5e
+|---------f0
+|            fc0bdf5e4f88bf26a7ebe385890407f79a7f2b
+|---------f2
+|            0814cccf5a2b75e671be2a0d4e36ca2f1bf654
+|            9891b482e422356780f368ff71d187d1a7bdee
+|            b38bd97ba12fed3d916e5f9ee2bd211ac84d39
+|---------f3
+|            c04c13d37afe9372a707dd4312c7aa5c3993c5
+|            c2fc5c6028f079e2b325d96e1a45562c8b4bd3
+|            c77dbd635f816c5725d0fd62b1417d72e56ee4
+|---------f4
+|            8799464ec431404dfaf9308ecabf0b772cefff
+|            b28c5191916db6ef2307b0e76629b55cdf90d6
+|            c7f9f469f5363e9bb8b094bfca2b4875e48dde
+|            da124b9a8e1bddcb8d73a2f81e2f640cbd5b07
+|            fd7090cff496aeb2b79b581a0e76143a0ce7c8
+|---------f5
+|            4e598b765d3b41d633b88b2f917ae981511875
+|            61620e72ea8b49200d606a2441a8494a00343d
+|            6ab770da88390ce2d47d7862b73d5df67366bf
+|---------f6
+|            3131e7370f03406ccc525b7a72e94166e4977d
+|            ad75f3780cdce4844342cef9e73676a92f64c8
+|---------f7
+|            872303746f8e8f81ddf81fa9c4e1d60029e01c
+|---------f8
+|            5910d6623c4710f693d9b10060c2b29f2d862c
+|            5c12092472255858d86638ebef1bcaa6b659ee
+|---------f9
+|            6956c1a31a73633913714cd5939e4c85393d6a
+|            a0f112bf3d18968732f4f53809cb1f937555fd
+|---------fa
+|            b84f931bae9e50579f009993faf32f07a97fb7
+|            f541572d7b3dab1ae5d1dd62a8dd0e762cb829
+|---------fb
+|            0c705cf80d4ae1b5d056489a13744aa5ac177a
+|            9c160a59d7493bdf1499c3ac7bd7968d86eba0
+|            f1028d22793fd654063eb104d7b9ac62751e2d
+|---------fc
+|            c9001ccc3a17af94c72e1877b90d2838cb3396
+|            efdb1cd4aaac57c9dbf426cae34d232611d7b0
+|---------fe
+|            9c01f2bf9ad5a61bfd03c86dc15e66042d4cea
+|            caf5aad771e4cc4951d562ed2bf8a02f99390d
+|---------info
+|---------pack
+|            pack-9435187b9ec2fb267df36be44628587d20f74e0d.idx
+|            pack-9435187b9ec2fb267df36be44628587d20f74e0d.pack
+|      packed-refs
+|------refs
+|---------heads
+|            main
+|---------remotes
+|------------origin
+|               HEAD
+|               main
+|---------tags
+|---Framework
+|      .gitignore
+|------.idea
+|         aws.xml
+|         azureSettings.xml
+|---------codeStyles
+|            codeStyleConfig.xml
+|         compiler.xml
+|         encodings.xml
+|---------libraries
+|            Maven__commons_codec_commons_codec_1_10.xml
+|            Maven__commons_io_commons_io_2_6.xml
+|            Maven__commons_logging_commons_logging_1_2.xml
+|            Maven__com_beust_jcommander_1_78.xml
+|            Maven__com_google_code_findbugs_jsr305_1_3_9.xml
+|            Maven__com_google_code_gson_gson_2_8_5.xml
+|            Maven__com_google_errorprone_error_prone_annotations_2_1_3.xml
+|            Maven__com_google_guava_guava_25_0_jre.xml
+|            Maven__com_google_j2objc_j2objc_annotations_1_1.xml
+|            Maven__com_squareup_okhttp3_okhttp_3_11_0.xml
+|            Maven__com_squareup_okio_okio_1_14_0.xml
+|            Maven__io_github_bonigarcia_webdrivermanager_3_6_2.xml
+|            Maven__junit_junit_3_8_1.xml
+|            Maven__net_bytebuddy_byte_buddy_1_8_15.xml
+|            Maven__org_apache_commons_commons_compress_1_18.xml
+|            Maven__org_apache_commons_commons_exec_1_3.xml
+|            Maven__org_apache_commons_commons_lang3_3_8_1.xml
+|            Maven__org_apache_httpcomponents_httpclient_4_5_6.xml
+|            Maven__org_apache_httpcomponents_httpcore_4_4_10.xml
+|            Maven__org_apache_logging_log4j_log4j_api_2_11_1.xml
+|            Maven__org_apache_logging_log4j_log4j_core_2_11_1.xml
+|            Maven__org_checkerframework_checker_compat_qual_2_0_0.xml
+|            Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml
+|            Maven__org_hamcrest_hamcrest_2_1.xml
+|            Maven__org_jsoup_jsoup_1_11_3.xml
+|            Maven__org_rauschig_jarchivelib_1_0_0.xml
+|            Maven__org_seleniumhq_selenium_selenium_api_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_edge_driver_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_ie_driver_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_java_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_opera_driver_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_remote_driver_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_safari_driver_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_support_3_141_59.xml
+|            Maven__org_slf4j_slf4j_api_1_7_25.xml
+|            Maven__org_testng_testng_7_4_0.xml
+|            Maven__org_webjars_jquery_3_5_1.xml
+|         misc.xml
+|         modules.xml
+|         uiDesigner.xml
+|         vcs.xml
+|         workspace.xml
+|---------ZeppelinRemoteNotebooks
+|      Framework.iml
+|      help.txt
+|      pom.xml
+|------src
+|---------test
+|------------java
+|---------------Hardcore
+|------------------driver
+|                     DriverSingleton.java
+|------------------model
+|                     InputData.java
+|------------------page
+|                     AbstractPage.java
+|                     GoogleCloudMainPage.java
+|                     GoogleCloudPricingCalculatorPage.java
+|                     TempEmailPage.java
+|------------------service
+|                     InputDataCreator.java
+|                     TestDataReader.java
+|------------------test
+|                     AbstractTest.java
+|                     GoogleCloudTest.java
+|------------------util
+|                     StringToWebElement.java
+|                     TestListener.java
+|------------resources
+|               dev.properties
+|               log4j2.xml
+|               qa.properties
+|               testng-all.xml
+|               testng-googleCloudTest.xml
+|------target
+|---------generated-test-sources
+|------------test-annotations
+|---------logs
+|            github-automation.log
+|---------maven-status
+|------------maven-compiler-plugin
+|---------------testCompile
+|------------------default-testCompile
+|                     createdFiles.lst
+|                     inputFiles.lst
+|---------surefire-reports
+|            bullet_point.png
+|            collapseall.gif
+|            emailable-report.html
+|            failed.png
+|            index.html
+|            jquery.min.js
+|------------junitreports
+|               TEST-Hardcore.test.GoogleCloudTest.xml
+|            navigator-bullet.png
+|------------old
+|               index.html
+|---------------Smoke
+|                  classes.html
+|                  GoogleCloudTest.properties
+|                  groups.html
+|                  index.html
+|                  main.html
+|                  methods-alphabetical.html
+|                  methods-not-run.html
+|                  methods.html
+|                  reporter-output.html
+|                  testng.xml.html
+|                  toc.html
+|            passed.png
+|            skipped.png
+|------------Smoke
+|               GoogleCloudTest.html
+|               GoogleCloudTest.xml
+|            TEST-TestSuite.xml
+|            testng-reports.css
+|            testng-reports.js
+|            testng-reports1.css
+|            testng-reports2.js
+|            testng-results.xml
+|            testng.css
+|            TestSuite.txt
+|---------test-classes
+|            dev.properties
+|------------Hardcore
+|---------------driver
+|                  DriverSingleton.class
+|---------------model
+|                  InputData.class
+|---------------page
+|                  AbstractPage.class
+|                  GoogleCloudMainPage.class
+|                  GoogleCloudPricingCalculatorPage.class
+|                  TempEmailPage.class
+|---------------service
+|                  InputDataCreator.class
+|                  TestDataReader.class
+|---------------test
+|                  AbstractTest.class
+|                  GoogleCloudTest.class
+|---------------util
+|                  StringToWebElement.class
+|                  TestListener.class
+|            log4j2.xml
+|            qa.properties
+|            testng-all.xml
+|            testng-googleCloudTest.xml
+|      ~$адание.docx
+|---github-automation
+|------.git
+|         config
+|         description
+|         HEAD
+|---------hooks
+|            applypatch-msg.sample
+|            commit-msg.sample
+|            fsmonitor-watchman.sample
+|            post-update.sample
+|            pre-applypatch.sample
+|            pre-commit.sample
+|            pre-merge-commit.sample
+|            pre-push.sample
+|            pre-rebase.sample
+|            pre-receive.sample
+|            prepare-commit-msg.sample
+|            push-to-checkout.sample
+|            update.sample
+|         index
+|---------info
+|            exclude
+|---------logs
+|            HEAD
+|------------refs
+|---------------heads
+|                  master
+|---------------remotes
+|------------------origin
+|                     HEAD
+|---------objects
+|------------info
+|------------pack
+|               pack-c076f2e1f15542d8aff82d1591489c2f29d87dab.idx
+|               pack-c076f2e1f15542d8aff82d1591489c2f29d87dab.pack
+|         packed-refs
+|---------refs
+|------------heads
+|               master
+|------------remotes
+|---------------origin
+|                  HEAD
+|------------tags
+|------dotnet
+|         .gitignore
+|---------GitHubAutomation
+|------------Driver
+|               DriverInstance.cs
+|------------DriverBinaries
+|               geckodriver.exe
+|            GitHubAutomation.csproj
+|            packages.config
+|------------Pages
+|               CreateNewRepositoryPage.cs
+|               LoginPage.cs
+|               MainPage.cs
+|------------Properties
+|               AssemblyInfo.cs
+|------------Steps
+|               Steps.cs
+|------------Tests
+|               SmokeTests.cs
+|------------Utils
+|               RandomGenerator.cs
+|         GitHubAutomation.sln
+|------java
+|         .gitignore
+|---------GitHubAutomation
+|------------.idea
+|               .name
+|               aws.xml
+|               azureSettings.xml
+|---------------codeStyles
+|                  codeStyleConfig.xml
+|               compiler.xml
+|---------------libraries
+|                  Maven__commons_codec_commons_codec_1_10.xml
+|                  Maven__commons_io_commons_io_2_6.xml
+|                  Maven__commons_logging_commons_logging_1_2.xml
+|                  Maven__com_beust_jcommander_1_72.xml
+|                  Maven__com_google_code_findbugs_jsr305_1_3_9.xml
+|                  Maven__com_google_code_gson_gson_2_8_5.xml
+|                  Maven__com_google_errorprone_error_prone_annotations_2_1_3.xml
+|                  Maven__com_google_guava_guava_25_0_jre.xml
+|                  Maven__com_google_j2objc_j2objc_annotations_1_1.xml
+|                  Maven__com_squareup_okhttp3_okhttp_3_11_0.xml
+|                  Maven__com_squareup_okio_okio_1_14_0.xml
+|                  Maven__io_github_bonigarcia_webdrivermanager_3_3_0.xml
+|                  Maven__net_bytebuddy_byte_buddy_1_8_15.xml
+|                  Maven__org_apache_commons_commons_compress_1_18.xml
+|                  Maven__org_apache_commons_commons_exec_1_3.xml
+|                  Maven__org_apache_commons_commons_lang3_3_8_1.xml
+|                  Maven__org_apache_extras_beanshell_bsh_2_0b6.xml
+|                  Maven__org_apache_httpcomponents_httpclient_4_5_6.xml
+|                  Maven__org_apache_httpcomponents_httpcore_4_4_10.xml
+|                  Maven__org_apache_logging_log4j_log4j_api_2_11_1.xml
+|                  Maven__org_apache_logging_log4j_log4j_core_2_11_1.xml
+|                  Maven__org_checkerframework_checker_compat_qual_2_0_0.xml
+|                  Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml
+|                  Maven__org_hamcrest_hamcrest_2_1.xml
+|                  Maven__org_jsoup_jsoup_1_11_3.xml
+|                  Maven__org_rauschig_jarchivelib_1_0_0.xml
+|                  Maven__org_seleniumhq_selenium_selenium_api_3_141_0.xml
+|                  Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_141_0.xml
+|                  Maven__org_seleniumhq_selenium_selenium_edge_driver_3_141_0.xml
+|                  Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_141_0.xml
+|                  Maven__org_seleniumhq_selenium_selenium_ie_driver_3_141_0.xml
+|                  Maven__org_seleniumhq_selenium_selenium_java_3_141_0.xml
+|                  Maven__org_seleniumhq_selenium_selenium_opera_driver_3_141_0.xml
+|                  Maven__org_seleniumhq_selenium_selenium_remote_driver_3_141_0.xml
+|                  Maven__org_seleniumhq_selenium_selenium_safari_driver_3_141_0.xml
+|                  Maven__org_seleniumhq_selenium_selenium_support_3_141_0.xml
+|                  Maven__org_slf4j_slf4j_api_1_7_25.xml
+|                  Maven__org_testng_testng_6_14_3.xml
+|               misc.xml
+|               modules.xml
+|               vcs.xml
+|               workspace.xml
+|            github-automation.iml
+|            pom.xml
+|------------src
+|---------------test
+|------------------java
+|---------------------com
+|------------------------epam
+|---------------------------ta
+|------------------------------driver
+|                                 DriverSingleton.java
+|------------------------------model
+|                                 User.java
+|------------------------------page
+|                                 AbstractPage.java
+|                                 CreateNewRepositoryPage.java
+|                                 LoginPage.java
+|                                 MainPage.java
+|------------------------------service
+|                                 TestDataReader.java
+|                                 UserCreator.java
+|------------------------------test
+|                                 CommonConditions.java
+|                                 RepositoryManagementTests.java
+|                                 UserAccessTests.java
+|------------------------------util
+|                                 StringUtils.java
+|                                 TestListener.java
+|------------------resources
+|                     dev.properties
+|                     log4j2.xml
+|                     qa.properties
+|                     staging.properties
+|                     testng-all.xml
+|                     testng-smoke.xml
+|------------target
+|---------------generated-test-sources
+|------------------test-annotations
+|---------------logs
+|                  github-automation.log
+|---------------maven-status
+|------------------maven-compiler-plugin
+|---------------------testCompile
+|------------------------default-testCompile
+|                           createdFiles.lst
+|                           inputFiles.lst
+|---------------surefire-reports
+|                  bullet_point.png
+|                  collapseall.gif
+|                  emailable-report.html
+|                  failed.png
+|                  index.html
+|                  jquery-1.7.1.min.js
+|------------------junitreports
+|                     TEST-com.epam.ta.test.UserAccessTests.xml
+|                  navigator-bullet.png
+|------------------old
+|                     index.html
+|---------------------Smoke
+|                        classes.html
+|                        groups.html
+|                        index.html
+|                        main.html
+|                        methods-alphabetical.html
+|                        methods-not-run.html
+|                        methods.html
+|                        reporter-output.html
+|                        testng.xml.html
+|                        toc.html
+|                        UserAccess.properties
+|                  passed.png
+|                  skipped.png
+|------------------Smoke
+|                     testng-failed.xml
+|                     UserAccess.html
+|                     UserAccess.xml
+|                  TEST-TestSuite.xml
+|                  testng-failed.xml
+|                  testng-reports.css
+|                  testng-reports.js
+|                  testng-results.xml
+|                  testng.css
+|                  TestSuite.txt
+|---------------test-classes
+|------------------com
+|---------------------epam
+|------------------------ta
+|---------------------------driver
+|                              DriverSingleton.class
+|---------------------------model
+|                              User.class
+|---------------------------page
+|                              AbstractPage.class
+|                              CreateNewRepositoryPage.class
+|                              LoginPage.class
+|                              MainPage.class
+|---------------------------service
+|                              TestDataReader.class
+|                              UserCreator.class
+|---------------------------test
+|                              CommonConditions.class
+|                              RepositoryManagementTests.class
+|                              UserAccessTests.class
+|---------------------------util
+|                              StringUtils.class
+|                              TestListener.class
+|                  dev.properties
+|                  log4j2.xml
+|                  qa.properties
+|                  staging.properties
+|                  testng-all.xml
+|                  testng-smoke.xml
+|      README.md
+|---Java
+|      .gitignore
+|------.idea
+|         aws.xml
+|         azureSettings.xml
+|---------codeStyles
+|            codeStyleConfig.xml
+|         compiler.xml
+|---------libraries
+|            Maven__com_beust_jcommander_1_78.xml
+|            Maven__com_google_code_findbugs_jsr305_1_3_9.xml
+|            Maven__com_google_errorprone_error_prone_annotations_2_1_3.xml
+|            Maven__com_google_guava_guava_25_0_jre.xml
+|            Maven__com_google_j2objc_j2objc_annotations_1_1.xml
+|            Maven__com_squareup_okhttp3_okhttp_3_11_0.xml
+|            Maven__com_squareup_okio_okio_1_14_0.xml
+|            Maven__net_bytebuddy_byte_buddy_1_8_15.xml
+|            Maven__org_apache_commons_commons_exec_1_3.xml
+|            Maven__org_apache_logging_log4j_log4j_api_2_11_1.xml
+|            Maven__org_apache_logging_log4j_log4j_core_2_11_1.xml
+|            Maven__org_checkerframework_checker_compat_qual_2_0_0.xml
+|            Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml
+|            Maven__org_seleniumhq_selenium_selenium_api_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_edge_driver_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_ie_driver_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_java_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_opera_driver_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_remote_driver_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_safari_driver_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_support_3_141_59.xml
+|            Maven__org_testng_testng_7_4_0.xml
+|            Maven__org_webjars_jquery_3_5_1.xml
+|         misc.xml
+|         modules.xml
+|         uiDesigner.xml
+|         vcs.xml
+|         workspace.xml
+|---------ZeppelinRemoteNotebooks
+|      Java.iml
+|      pom.xml
+|------src
+|---------main
+|------------java
+|---------------errorsAndExceptions
+|------------------actions
+|                     AverageCalculator.java
+|                     FacultyAction.java
+|                     GroupAction.java
+|                     StudentAction.java
+|                     UniversityAction.java
+|------------------run
+|                     Runner.java
+|------------------services
+|                     CodeInitializer.java
+|                     Initializer.java
+|------------------universityEntities
+|                     Faculty.java
+|                     Grades.java
+|                     Group.java
+|                     Student.java
+|                     Subject.java
+|                     University.java
+|------------------universityExceptions
+|                     FacultyWithoutGroupsException.java
+|                     GradeOutOfRangeException.java
+|                     GroupWithoutStudentsException.java
+|                     StudentWithoutSubjectsException.java
+|                     UniversityWithoutFacultiesException.java
+|---------------ioFundamentals
+|------------------analyzers
+|                     FileAnalyzer.java
+|                     FileStructureAnalyzer.java
+|                     PathAnalyzer.java
+|------------------fileStructureEntities
+|                     DirectoryHierarchy.java
+|                     DirectoryHierarchyItem.java
+|                  hierarchy.txt
+|------------------input
+|                     DirectoryHierarchyCreator.java
+|------------------output
+|                     Writer.java
+|------------------run
+|                     DirectoryHierarchyExecutor.java
+|                     Runner.java
+|------------------services
+|                     Calculator.java
+|                     SourceFileType.java
+|---------------threads
+|------------------creator
+|                     Creator.java
+|------------------entities
+|                     Car.java
+|                     CarPark.java
+|                     ParkLot.java
+|                     ParkPool.java
+|------------------main
+|                     Main.java
+|------------resources
+|               log4j2.xml
+|               task_errorsAndExceptions.txt
+|               task_ioFundamentals.txt
+|               task_threads.txt
+|------target
+|---------classes
+|------------errorsAndExceptions
+|---------------actions
+|                  AverageCalculator.class
+|                  FacultyAction.class
+|                  GroupAction.class
+|                  StudentAction.class
+|                  UniversityAction.class
+|---------------run
+|                  Runner.class
+|---------------services
+|                  CodeInitializer.class
+|                  Initializer.class
+|---------------universityEntities
+|                  Faculty.class
+|                  Grades.class
+|                  Group.class
+|                  Student.class
+|                  Subject.class
+|                  University.class
+|---------------universityExceptions
+|                  FacultyWithoutGroupsException.class
+|                  GradeOutOfRangeException.class
+|                  GroupWithoutStudentsException.class
+|                  StudentWithoutSubjectsException.class
+|                  UniversityWithoutFacultiesException.class
+|------------ioFundamentals
+|---------------analyzers
+|                  FileAnalyzer.class
+|                  FileStructureAnalyzer.class
+|                  PathAnalyzer.class
+|---------------fileStructureEntities
+|                  DirectoryHierarchy.class
+|                  DirectoryHierarchyItem.class
+|---------------input
+|                  DirectoryHierarchyCreator.class
+|---------------output
+|                  Writer.class
+|---------------run
+|                  DirectoryHierarchyExecutor$1.class
+|                  DirectoryHierarchyExecutor.class
+|                  Runner.class
+|---------------services
+|                  Calculator.class
+|                  SourceFileType.class
+|            log4j2.xml
+|------------META-INF
+|               Java.kotlin_module
+|            task_errorsAndExceptions.txt
+|            task_ioFundamentals.txt
+|            task_threads.txt
+|------------threads
+|---------------creator
+|                  Creator.class
+|---------------entities
+|                  Car.class
+|                  CarPark.class
+|                  ParkLot.class
+|                  ParkPool.class
+|---------------main
+|                  Main.class
+|---------generated-sources
+|------------annotations
+|---------generated-test-sources
+|------------test-annotations
+|---------logs
+|            github-automation.log
+|---------test-classes
+|------------META-INF
+|               Java.kotlin_module
+|   README.md
+|---WebDriver
+|      .gitignore
+|------.idea
+|         aws.xml
+|         azureSettings.xml
+|---------codeStyles
+|            codeStyleConfig.xml
+|         compiler.xml
+|---------libraries
+|            Maven__com_beust_jcommander_1_78.xml
+|            Maven__com_google_code_findbugs_jsr305_1_3_9.xml
+|            Maven__com_google_errorprone_error_prone_annotations_2_1_3.xml
+|            Maven__com_google_guava_guava_25_0_jre.xml
+|            Maven__com_google_j2objc_j2objc_annotations_1_1.xml
+|            Maven__com_squareup_okhttp3_okhttp_3_11_0.xml
+|            Maven__com_squareup_okio_okio_1_14_0.xml
+|            Maven__net_bytebuddy_byte_buddy_1_8_15.xml
+|            Maven__org_apache_commons_commons_exec_1_3.xml
+|            Maven__org_checkerframework_checker_compat_qual_2_0_0.xml
+|            Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml
+|            Maven__org_seleniumhq_selenium_selenium_api_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_edge_driver_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_ie_driver_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_java_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_opera_driver_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_remote_driver_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_safari_driver_3_141_59.xml
+|            Maven__org_seleniumhq_selenium_selenium_support_3_141_59.xml
+|            Maven__org_testng_testng_7_4_0.xml
+|            Maven__org_webjars_jquery_3_5_1.xml
+|         misc.xml
+|         modules.xml
+|         uiDesigner.xml
+|         vcs.xml
+|         workspace.xml
+|---------ZeppelinRemoteNotebooks
+|      pom.xml
+|------src
+|---------main
+|------------java
+|------------resources
+|               chromedriver.exe
+|               conf.properties
+|---------test
+|------------java
+|---------------BringItOn
+|------------------page
+|                     AbstractPage.java
+|                     PastebinMainPage.java
+|                     PastebinSubmittedPastePage.java
+|------------------test
+|                     AbstractTest.java
+|                     PastebinTest.java
+|---------------Hardcore
+|------------------page
+|                     AbstractPage.java
+|                     GoogleCloudMainPage.java
+|                     GoogleCloudPricingCalculatorPage.java
+|                     TempEmailPage.java
+|------------------test
+|                     AbstractTest.java
+|                     GoogleCloudTest.java
+|---------------HurtMePlenty
+|------------------page
+|                     AbstractPage.java
+|                     GoogleCloudMainPage.java
+|                     GoogleCloudPricingCalculatorPage.java
+|------------------test
+|                     AbstractTest.java
+|                     GoogleCloudTest.java
+|---------------ICanWin
+|------------------page
+|                     AbstractPage.java
+|                     PastebinMainPage.java
+|                     PastebinSubmittedPastePage.java
+|------------------test
+|                     AbstractTest.java
+|                     PastebinTest.java
+|---------------Properties
+|                  ConfProperties.java
+|------target
+|---------classes
+|            chromedriver.exe
+|            conf.properties
+|---------generated-sources
+|------------annotations
+|---------generated-test-sources
+|------------test-annotations
+|---------test-classes
+|------------BringItOn
+|---------------page
+|                  AbstractPage.class
+|                  PastebinMainPage.class
+|                  PastebinSubmittedPastePage.class
+|---------------test
+|                  AbstractTest.class
+|                  PastebinTest.class
+|------------Hardcore
+|---------------page
+|                  AbstractPage.class
+|                  GoogleCloudMainPage.class
+|                  GoogleCloudPricingCalculatorPage.class
+|                  TempEmailPage.class
+|---------------test
+|                  AbstractTest.class
+|                  GoogleCloudTest.class
+|------------HurtMePlenty
+|---------------page
+|                  AbstractPage.class
+|                  GoogleCloudMainPage.class
+|                  GoogleCloudPricingCalculatorPage.class
+|---------------test
+|                  AbstractTest.class
+|                  GoogleCloudTest.class
+|------------ICanWin
+|---------------page
+|                  AbstractPage.class
+|                  PastebinMainPage.class
+|                  PastebinSubmittedPastePage.class
+|---------------test
+|                  AbstractTest.class
+|                  PastebinTest.class
+|------------META-INF
+|               WebDriver.kotlin_module
+|------------Properties
+|               ConfProperties.class
+|      WebDriver.iml
+|      ~$адание.docx
+|      Задание.docx

@@ -8,18 +8,18 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class FileAnalyzer {
-    private static final int GENERAL_INDENT = 1;//начальный отступ
-    private static final int NESTED_LEVEL_INDENT = 3;//отступ на уровне вложенности
-    private static Integer NestingLevel = 0;
-    private static String FileName;
+    private static final int GENERAL_INDENT = 1;
+    private static final int NESTED_LEVEL_INDENT = 3;
+    private static Integer nestingLevel = 0;
+    private static String fileName;
 
     public static DirectoryHierarchyItem analyzeLine(String line, DirectoryHierarchy directoryHierarchy) {
-        parseLineToFileName(line);
-        String parentPath = PathAnalyzer.getParentPath(directoryHierarchy, NestingLevel);
-        return new DirectoryHierarchyItem(new File(parentPath + FileName), NestingLevel);
+        parseLineToNestingLevelAndFileName(line);
+        String parentPath = PathAnalyzer.getParentPath(directoryHierarchy, nestingLevel);
+        return new DirectoryHierarchyItem(new File(parentPath + fileName), nestingLevel);
     }
 
-    private static void parseLineToFileName(String line) {
+    private static void parseLineToNestingLevelAndFileName(String line) {
         if (line.matches("[|][-]+\\S+")) {
             parseByPattern(line, Pattern.compile(("[|][-]+")));
         } else if (line.matches("[|][ ]+\\S+")) {
@@ -31,9 +31,9 @@ public class FileAnalyzer {
         Matcher matcher = pattern.matcher(line);
         if (matcher.lookingAt()) {
             int fileNameIndex = matcher.end();
-            NestingLevel = (fileNameIndex - GENERAL_INDENT) / NESTED_LEVEL_INDENT;
-            NestingLevel--;
-            FileName = line.substring(fileNameIndex);
+            nestingLevel = (fileNameIndex - GENERAL_INDENT) / NESTED_LEVEL_INDENT;
+            nestingLevel--;
+            fileName = line.substring(fileNameIndex);
         }
     }
 }

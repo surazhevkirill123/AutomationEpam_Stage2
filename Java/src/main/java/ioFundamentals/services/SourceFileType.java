@@ -1,4 +1,4 @@
-package ioFundamentals.fileStructureEntities;
+package ioFundamentals.services;
 
 import java.io.File;
 

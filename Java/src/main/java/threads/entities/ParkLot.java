@@ -1,4 +1,4 @@
-package threads.entity;
+package threads.entities;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -11,6 +11,7 @@ public class ParkLot {
 
     private int lotId;
     private int parkId;
+    private static final int maxWaitMillisForUsingLot = 200;
 
     public ParkLot(int lotId, int parkId){
         super();
@@ -33,7 +34,7 @@ public class ParkLot {
     public void using(){
         LOG.debug("LOT #" + lotId + " using by Car #" + Thread.currentThread().getId());
         try{
-            TimeUnit.MILLISECONDS.sleep(new java.util.Random().nextInt(200));
+            TimeUnit.MILLISECONDS.sleep(new java.util.Random().nextInt(maxWaitMillisForUsingLot));
         } catch (InterruptedException e){
             LOG.error(e);
         }

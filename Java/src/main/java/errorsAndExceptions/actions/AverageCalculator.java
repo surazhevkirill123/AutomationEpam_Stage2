@@ -22,7 +22,6 @@ public class AverageCalculator {
         List<Integer> subjectGrades = students.stream().filter(student -> student.isStudySubject(subject)).
                 map(student -> StudentAction.getGradesBySubject(student, subject)).
                 flatMap(Collection::stream).collect(Collectors.toList());
-
         return calculateAverageFromInteger(subjectGrades);
     }
 }
