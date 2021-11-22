@@ -5,12 +5,9 @@ import Hardcore.util.TestListener;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
-
-import java.util.concurrent.TimeUnit;
 
 @Listeners({TestListener.class})
 public class AbstractTest {
@@ -26,11 +23,12 @@ public class AbstractTest {
             System.setProperty("environment","dev");
         }
         driver = DriverSingleton.getDriver();
+        logger.info(System.getProperty("browser") + " opened");
     }
 
     @AfterTest(alwaysRun = true)
     public void browserExit() {
         DriverSingleton.closeDriver();
-        logger.info("Closing");
+        logger.info(System.getProperty("browser") + " closed");
     }
 }

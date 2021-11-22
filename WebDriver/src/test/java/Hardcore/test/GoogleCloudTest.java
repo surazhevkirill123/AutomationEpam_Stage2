@@ -26,7 +26,7 @@ public class GoogleCloudTest extends AbstractTest {
 
     @Test(dependsOnMethods = {"fillInEstimationForm"},
             description = "Check Email total cost against calculated total cost")
-    public void checkTotalCost() {
+    public void checkTotalCost() throws InterruptedException {
         tempEmailPage = new TempEmailPage(driver).openInNewTab();
         String tempEmail = tempEmailPage.getTempEMail();
 
@@ -38,6 +38,7 @@ public class GoogleCloudTest extends AbstractTest {
         String costOnCalcPage = cloudCalculatorPage.getTotalCost();
 
         tempEmailPage.switchToNextTab();
+        tempEmailPage.refresh();
         String costOnEmailPage = tempEmailPage.getCostFromEmail();
 
         Assert.assertTrue(costOnCalcPage.contains(costOnEmailPage), "Total Cost from email doesn't match the one from the Calculator page");

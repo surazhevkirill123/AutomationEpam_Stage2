@@ -11,6 +11,9 @@ public class PastebinSubmittedPastePage extends AbstractPage {
     @FindBy(xpath = "//textarea")
     WebElement textSubmittedPaste;
 
+    @FindBy(xpath = "//div[@class='info-top']/h1")
+    WebElement submittedPasteTitleLocator;
+
     public PastebinSubmittedPastePage(WebDriver driver) {
         super(driver);
     }
@@ -21,5 +24,9 @@ public class PastebinSubmittedPastePage extends AbstractPage {
 
     public String getSubmittedPasteText() {
         return textSubmittedPaste.getText();
+    }
+
+    public String getSubmittedPasteTitleLocator() {
+        return waitForWebElementVisible(submittedPasteTitleLocator).getText();
     }
 }

@@ -1,15 +1,12 @@
 package BringItOn.test;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class PastebinTest extends AbstractTest {
     @Test(description = "Check if submitted paste title matches initial paste title")
     public void checkSubmittedPastePageTitle() {
-        WebElement titleSubmittedPaste = waitForElement(By.xpath(SUBMITTED_PASTE_TITLE_LOCATOR));
-        String actualPageTitle = titleSubmittedPaste.getText();
+        String actualPageTitle = pastebinSubmittedPastePage.getSubmittedPasteTitleLocator();
 
         Assert.assertEquals(actualPageTitle, NEW_PASTE_TITLE, "Submitted paste title doesn't match initial paste title");
     }

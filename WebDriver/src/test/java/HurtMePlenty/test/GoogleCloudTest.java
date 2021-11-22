@@ -1,6 +1,5 @@
 package HurtMePlenty.test;
 
-import Hardcore.page.TempEmailPage;
 import HurtMePlenty.page.GoogleCloudMainPage;
 import HurtMePlenty.page.GoogleCloudPricingCalculatorPage;
 import org.testng.Assert;

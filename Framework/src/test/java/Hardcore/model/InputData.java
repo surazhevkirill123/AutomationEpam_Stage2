@@ -1,52 +1,41 @@
 package Hardcore.model;
 
-import Hardcore.util.StringToWebElement;
-import org.openqa.selenium.support.FindBy;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import Hardcore.page.AbstractPage;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.util.Objects;
 
 public class InputData {
-    String instances;
-    String buttonComputeEngine;
+    private String instances;
+    private String buttonComputeEngine;
 
-    String inputNumberOfInstances;
+    private String inputNumberOfInstances;
 
-    String inputPurpose;
+    private String inputPurpose;
 
-    String dropdownSoftware;
-    String itemSoftware;
+    private String dropdownSoftware;
+    private String itemSoftware;
 
-    String dropdownClass;
-    String itemClass;
+    private String dropdownClass;
+    private String itemClass;
 
-    String dropdownSeries;
-    String itemSeries;
+    private String dropdownSeries;
+    private String itemSeries;
 
-    String dropdownMachineType;
-    String itemMachineType;
+    private String dropdownMachineType;
+    private String itemMachineType;
 
-    String checkboxAddGPUs;
-    String dropboxNumberOfGPUs;
-    String itemNumberOfGPUs;
-    String dropboxGPUType;
-    String itemGPUType;
+    private String checkboxAddGPUs;
+    private String dropboxNumberOfGPUs;
+    private String itemNumberOfGPUs;
+    private String dropboxGPUType;
+    private String itemGPUType;
 
-    String dropdownSSD;
-    String itemSSD;
+    private String dropdownSSD;
+    private String itemSSD;
 
-    String dropdownLocation;
-    String itemLocation;
+    private String dropdownLocation;
+    private String itemLocation;
 
-    String dropdownUsage;
-    String itemUsage;
+    private String dropdownUsage;
+    private String itemUsage;
 
     public InputData(String instances, String buttonComputeEngine, String inputNumberOfInstances,
                      String inputPurpose, String dropdownSoftware, String itemSoftware,

@@ -1,8 +1,7 @@
 package Hardcore.test;
 
-import Properties.ConfProperties;
+import Hardcore.driver.DriverSingleton;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -11,14 +10,15 @@ public class AbstractTest {
 
     @BeforeTest(alwaysRun = true)
     public void browserSetup() {
-        System.setProperty("webdriver.chrome.driver", ConfProperties.getProperty("chromeDriver"));
-        driver = new ChromeDriver();
+        if (System.getProperty("browser") == null){
+            System.setProperty("browser","chrome");
+        }
+        driver = DriverSingleton.getDriver();
         driver.manage().window().maximize();
     }
 
     @AfterTest(alwaysRun = true)
     public void browserExit() {
-        driver.quit();
-        driver = null;
+        DriverSingleton.closeDriver();
     }
 }

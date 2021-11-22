@@ -40,14 +40,14 @@ public class GoogleCloudPricingCalculatorPage extends AbstractPage {
 
     @FindBy(xpath = "//md-checkbox[@aria-label='Add GPUs' and @ng-model='listingCtrl.computeServer.addGPUs']")
     WebElement checkboxAddGPUs;
-    @FindBy(xpath = "//md-select[@placeholder='Number of GPUs']")
-    WebElement dropboxNumberOfGPUs;
-    @FindBy(xpath = "//md-option[@value='1' and contains(@ng-repeat, 'gpuType')]")
-    WebElement itemNumberOfGPUs;
     @FindBy(xpath = "//md-select[@placeholder='GPU type']")
     WebElement dropboxGPUType;
     @FindBy(xpath = "//md-option[@value='NVIDIA_TESLA_V100']")
     WebElement itemGPUType;
+    @FindBy(xpath = "//md-select[@placeholder='Number of GPUs']")
+    WebElement dropboxNumberOfGPUs;
+    @FindBy(xpath = "//md-option[@value='1' and contains(@ng-repeat, 'gpuType')]")
+    WebElement itemNumberOfGPUs;
 
     @FindBy(xpath = "//md-select[@placeholder='Local SSD']")
     WebElement dropdownSSD;

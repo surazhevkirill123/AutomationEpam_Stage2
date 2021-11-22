@@ -40,14 +40,14 @@ public class GoogleCloudPricingCalculatorPage extends AbstractPage {
 
     @FindBy(xpath = "//md-checkbox[@aria-label='Add GPUs' and @ng-model='listingCtrl.computeServer.addGPUs']")
     WebElement checkboxAddGPUs;
-    @FindBy(xpath = "//md-select[@placeholder='Number of GPUs']")
-    WebElement dropboxNumberOfGPUs;
-    @FindBy(xpath = "//md-option[@value='1' and contains(@ng-repeat, 'gpuType')]")
-    WebElement itemNumberOfGPUs;
     @FindBy(xpath = "//md-select[@placeholder='GPU type']")
     WebElement dropboxGPUType;
     @FindBy(xpath = "//md-option[@value='NVIDIA_TESLA_V100']")
     WebElement itemGPUType;
+    @FindBy(xpath = "//md-select[@placeholder='Number of GPUs']")
+    WebElement dropboxNumberOfGPUs;
+    @FindBy(xpath = "//md-option[@value='1' and contains(@ng-repeat, 'gpuType')]")
+    WebElement itemNumberOfGPUs;
 
     @FindBy(xpath = "//md-select[@placeholder='Local SSD']")
     WebElement dropdownSSD;
@@ -73,7 +73,7 @@ public class GoogleCloudPricingCalculatorPage extends AbstractPage {
     @FindBy(xpath = "//button[@aria-label='Email Estimate']")
     WebElement buttonEmailEstimate;
 
-    @FindBy(xpath = "//input[@ng-model='emailQuote.user.email' and @ng-model!='emailQuote.user.firstname']")
+    @FindBy(xpath = "//input[@ng-model!='emailQuote.user.firstname' and @ng-model='emailQuote.user.email']")
     WebElement inputEmail;
 
     @FindBy(xpath = "//button[@aria-label='Send Email']")

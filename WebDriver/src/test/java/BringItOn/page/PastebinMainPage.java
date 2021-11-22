@@ -3,10 +3,9 @@ package BringItOn.page;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PastebinMainPage extends AbstractPage {
-    private final String BASE_URL = "https://pastebin.com";
+    String BASE_URL = "https://pastebin.com";
 
     @FindBy(id = "postform-text")
     WebElement textAreaNewPaste;
@@ -18,6 +17,7 @@ public class PastebinMainPage extends AbstractPage {
 
     @FindBy(id = "select2-postform-expiration-container")
     WebElement expirationDropdown;
+
     @FindBy(xpath = "//li[text()='10 Minutes']")
     WebElement expiration10M;
 
