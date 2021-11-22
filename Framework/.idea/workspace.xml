@@ -1,106 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ed0b142-716c-41f1-a3db-c59d0ef27d29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/task_Hardcore.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_15-02-51.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_15-03-33.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_15-06-13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_15-09-37.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_15-10-18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_15-12-32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_15-14-45.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_15-15-49.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_15-25-13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_15-33-06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_15-35-00.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_15-36-33.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_15-48-10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_15-50-14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_15-51-19.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_15-52-34.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_16-04-56.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_16-12-43.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_16-16-46.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_16-25-24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_16-40-20.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_16-52-36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_16-56-57.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_17-40-02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_17-43-43.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_17-46-02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_17-50-10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_17-51-44.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_17-53-50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_17-59-48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_18-04-02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_18-06-09.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_18-07-16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_18-09-31.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_18-14-33.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots/2021-11-22_18-16-48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebDriver/src/test/java/BringItOn/driver/DriverSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebDriver/src/test/java/Hardcore/driver/DriverSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebDriver/src/test/java/HurtMePlenty/driver/DriverSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebDriver/src/test/java/ICanWin/driver/DriverSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/help.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/task_Framework.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Hardcore/model/InputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Hardcore/model/InputData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Hardcore/page/AbstractPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Hardcore/page/AbstractPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Hardcore/page/GoogleCloudMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Hardcore/page/GoogleCloudMainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Hardcore/page/GoogleCloudPricingCalculatorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Hardcore/page/GoogleCloudPricingCalculatorPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Hardcore/page/TempEmailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Hardcore/page/TempEmailPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Hardcore/service/InputDataCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Hardcore/service/InputDataCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Hardcore/test/AbstractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Hardcore/test/AbstractTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Hardcore/test/GoogleCloudTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Hardcore/test/GoogleCloudTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Hardcore/util/StringToWebElement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/qa.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/qa.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng-all.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng-all.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng-googleCloudTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng-googleCloudTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/logs/github-automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/logs/github-automation.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Hardcore/driver/DriverSingleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Hardcore/driver/DriverSingleton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Hardcore/model/InputData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Hardcore/model/InputData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Hardcore/page/AbstractPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Hardcore/page/AbstractPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Hardcore/page/GoogleCloudMainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Hardcore/page/GoogleCloudMainPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Hardcore/page/GoogleCloudPricingCalculatorPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Hardcore/page/GoogleCloudPricingCalculatorPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Hardcore/page/TempEmailPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Hardcore/page/TempEmailPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Hardcore/service/InputDataCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Hardcore/service/InputDataCreator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Hardcore/service/TestDataReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Hardcore/service/TestDataReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Hardcore/test/AbstractTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Hardcore/test/AbstractTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Hardcore/test/GoogleCloudTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Hardcore/test/GoogleCloudTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Hardcore/util/StringToWebElement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Hardcore/util/TestListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Hardcore/util/TestListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testng-all.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testng-all.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testng-googleCloudTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testng-googleCloudTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~$адание.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDriver/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/WebDriver.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDriver/WebDriver.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDriver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/src/main/resources/chromedriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/src/main/resources/conf.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/src/test/java/BringItOn/page/PastebinMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDriver/src/test/java/BringItOn/page/PastebinMainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/src/test/java/BringItOn/page/PastebinSubmittedPastePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDriver/src/test/java/BringItOn/page/PastebinSubmittedPastePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/src/test/java/BringItOn/test/AbstractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDriver/src/test/java/BringItOn/test/AbstractTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/src/test/java/BringItOn/test/PastebinTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDriver/src/test/java/BringItOn/test/PastebinTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/src/test/java/Hardcore/page/AbstractPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDriver/src/test/java/Hardcore/page/AbstractPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/src/test/java/Hardcore/page/GoogleCloudMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDriver/src/test/java/Hardcore/page/GoogleCloudMainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/src/test/java/Hardcore/page/GoogleCloudPricingCalculatorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDriver/src/test/java/Hardcore/page/GoogleCloudPricingCalculatorPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/src/test/java/Hardcore/page/TempEmailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDriver/src/test/java/Hardcore/page/TempEmailPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/src/test/java/Hardcore/test/AbstractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDriver/src/test/java/Hardcore/test/AbstractTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/src/test/java/Hardcore/test/GoogleCloudTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDriver/src/test/java/Hardcore/test/GoogleCloudTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/src/test/java/HurtMePlenty/page/AbstractPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDriver/src/test/java/HurtMePlenty/page/AbstractPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/src/test/java/HurtMePlenty/page/GoogleCloudMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDriver/src/test/java/HurtMePlenty/page/GoogleCloudMainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/src/test/java/HurtMePlenty/page/GoogleCloudPricingCalculatorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDriver/src/test/java/HurtMePlenty/page/GoogleCloudPricingCalculatorPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/src/test/java/HurtMePlenty/test/AbstractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDriver/src/test/java/HurtMePlenty/test/AbstractTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/src/test/java/HurtMePlenty/test/GoogleCloudTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDriver/src/test/java/HurtMePlenty/test/GoogleCloudTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/src/test/java/ICanWin/page/PastebinMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDriver/src/test/java/ICanWin/page/PastebinMainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/src/test/java/ICanWin/page/PastebinSubmittedPastePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDriver/src/test/java/ICanWin/page/PastebinSubmittedPastePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/src/test/java/ICanWin/test/AbstractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDriver/src/test/java/ICanWin/test/AbstractTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/src/test/java/ICanWin/test/PastebinTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDriver/src/test/java/ICanWin/test/PastebinTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebDriver/src/test/java/Properties/ConfProperties.java" beforeDir="false" />
-    </list>
+    <list default="true" id="1ed0b142-716c-41f1-a3db-c59d0ef27d29" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -314,7 +215,7 @@
       <workItem from="1636624240414" duration="549000" />
       <workItem from="1636737496509" duration="24238000" />
       <workItem from="1637558633602" duration="18996000" />
-      <workItem from="1637600521757" duration="5984000" />
+      <workItem from="1637600521757" duration="6667000" />
     </task>
     <servers />
   </component>
@@ -353,22 +254,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1635758019033" />
-    <state width="1877" height="283" key="GridCell.Tab.0.bottom" timestamp="1637606596406">
+    <state width="1877" height="283" key="GridCell.Tab.0.bottom" timestamp="1637608008660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1637606596406" />
-    <state width="1877" height="283" key="GridCell.Tab.0.center" timestamp="1637606596406">
+    <state width="1877" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1637608008660" />
+    <state width="1877" height="283" key="GridCell.Tab.0.center" timestamp="1637608008660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1637606596406" />
-    <state width="1877" height="283" key="GridCell.Tab.0.left" timestamp="1637606596406">
+    <state width="1877" height="283" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1637608008660" />
+    <state width="1877" height="283" key="GridCell.Tab.0.left" timestamp="1637608008659">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1637606596406" />
-    <state width="1877" height="283" key="GridCell.Tab.0.right" timestamp="1637606596406">
+    <state width="1877" height="283" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1637608008659" />
+    <state width="1877" height="283" key="GridCell.Tab.0.right" timestamp="1637608008660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1637606596406" />
+    <state width="1877" height="283" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1637608008660" />
     <state x="490" y="178" key="Maven.ArtifactSearchDialog" timestamp="1635348681945">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
