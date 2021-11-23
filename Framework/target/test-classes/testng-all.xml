@@ -4,7 +4,7 @@
 <suite name="All tests">
     <test name="All tests">
         <packages>
-            <package name="Hardcore.test"/>
+            <package name="Hardcore.test.*"/>
         </packages>
     </test>
 </suite>

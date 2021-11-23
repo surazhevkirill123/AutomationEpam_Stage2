@@ -561,3 +561,115 @@
 2021-11-23 23:21:14,368 INFO  [main] GoogleCloudPricingCalculatorPage opened
 2021-11-23 23:21:40,476 INFO  [main] Checking Email total cost against calculated total cost completed
 2021-11-23 23:21:42,346 INFO  [main] chrome closed
+2021-11-23 23:36:44,526 INFO  [main] chrome opened
+2021-11-23 23:36:53,065 INFO  [main] GoogleCloudMainPage opened
+2021-11-23 23:37:05,869 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-23 23:37:20,271 INFO  [main] Data inputted
+2021-11-23 23:37:20,782 INFO  [main] Filling in estimation form completed
+2021-11-23 23:37:26,714 INFO  [main] TempEmailPage opened
+2021-11-23 23:37:27,095 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-23 23:37:45,592 INFO  [main] Checking Email total cost against calculated total cost completed
+2021-11-23 23:37:47,924 INFO  [main] chrome closed
+2021-11-24 01:10:19,155 INFO  [main] opera opened
+2021-11-24 01:10:27,604 INFO  [main] GoogleCloudMainPage opened
+2021-11-24 01:10:54,291 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 01:11:17,143 INFO  [main] opera closed
+2021-11-24 01:12:45,186 INFO  [main] opera opened
+2021-11-24 01:12:57,579 INFO  [main] GoogleCloudMainPage opened
+2021-11-24 01:13:12,537 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 01:13:36,313 INFO  [main] opera closed
+2021-11-24 01:22:13,756 INFO  [main] chrome opened
+2021-11-24 01:22:24,264 INFO  [main] GoogleCloudMainPage opened
+2021-11-24 01:22:40,128 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 01:22:53,894 INFO  [main] Data inputted
+2021-11-24 01:22:54,403 INFO  [main] Filling in estimation form completed
+2021-11-24 01:23:00,257 INFO  [main] TempEmailPage opened
+2021-11-24 01:23:00,703 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 01:23:17,062 INFO  [main] Checking Email total cost against calculated total cost completed
+2021-11-24 01:23:18,527 INFO  [main] chrome closed
+2021-11-24 01:29:54,283 INFO  [main] chrome opened
+2021-11-24 01:29:58,028 INFO  [main] GoogleCloudMainPage opened
+2021-11-24 01:30:39,621 INFO  [main] opera opened
+2021-11-24 01:30:50,437 INFO  [main] GoogleCloudMainPage opened
+2021-11-24 01:31:04,771 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 01:31:15,430 INFO  [main] Filling in estimation form completed
+2021-11-24 01:31:23,974 INFO  [main] TempEmailPage opened
+2021-11-24 01:31:24,579 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 01:31:47,589 INFO  [main] Checking Email total cost against calculated total cost completed
+2021-11-24 01:31:52,063 INFO  [main] opera closed
+2021-11-24 01:36:10,884 INFO  [main] chrome opened
+2021-11-24 01:36:18,192 INFO  [main] chrome closed
+2021-11-24 01:38:02,501 INFO  [main] chrome opened
+2021-11-24 01:38:06,329 INFO  [main] chrome closed
+2021-11-24 01:40:49,577 INFO  [main] chrome
+2021-11-24 01:40:49,584 INFO  [main] chrome opened
+2021-11-24 01:41:07,871 INFO  [main] GoogleCloudMainPage opened
+2021-11-24 01:41:23,912 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 01:41:41,065 INFO  [main] Filling in estimation form completed
+2021-11-24 01:41:51,509 INFO  [main] TempEmailPage opened
+2021-11-24 01:41:52,597 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 01:42:08,618 INFO  [main] Checking Email total cost against calculated total cost completed
+2021-11-24 01:42:10,883 INFO  [main] chrome closed
+2021-11-24 01:45:12,576 INFO  [main] opera opened
+2021-11-24 01:45:22,866 INFO  [main] GoogleCloudMainPage opened
+2021-11-24 01:45:38,375 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 01:45:49,347 INFO  [main] Filling in estimation form completed
+2021-11-24 01:45:56,912 INFO  [main] TempEmailPage opened
+2021-11-24 01:45:57,371 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 01:46:13,515 INFO  [main] Checking Email total cost against calculated total cost completed
+2021-11-24 01:46:18,520 INFO  [main] opera closed
+2021-11-24 01:47:42,764 INFO  [main] firefox opened
+2021-11-24 01:47:57,265 INFO  [main] GoogleCloudMainPage opened
+2021-11-24 01:48:26,315 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 01:48:36,669 INFO  [main] firefox closed
+2021-11-24 01:49:15,404 INFO  [main] firefox opened
+2021-11-24 01:49:22,619 INFO  [main] GoogleCloudMainPage opened
+2021-11-24 01:49:34,471 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 01:49:43,059 INFO  [main] firefox closed
+2021-11-24 02:08:49,246 INFO  [main] firefox opened
+2021-11-24 02:09:00,005 INFO  [main] GoogleCloudMainPage opened
+2021-11-24 02:09:19,116 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 02:09:27,743 INFO  [main] firefox closed
+2021-11-24 02:13:33,449 INFO  [main] firefox opened
+2021-11-24 02:13:44,080 INFO  [main] GoogleCloudMainPage opened
+2021-11-24 02:14:01,662 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 02:14:30,542 INFO  [main] firefox closed
+2021-11-24 02:16:03,528 INFO  [main] firefox opened
+2021-11-24 02:16:11,406 INFO  [main] GoogleCloudMainPage opened
+2021-11-24 02:16:26,181 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 02:16:34,621 INFO  [main] firefox closed
+2021-11-24 02:17:35,549 INFO  [main] firefox opened
+2021-11-24 02:17:43,915 INFO  [main] GoogleCloudMainPage opened
+2021-11-24 02:17:55,256 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 02:18:04,924 INFO  [main] firefox closed
+2021-11-24 02:18:57,492 INFO  [main] firefox opened
+2021-11-24 02:19:06,948 INFO  [main] GoogleCloudMainPage opened
+2021-11-24 02:19:23,827 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 02:19:31,067 INFO  [main] firefox closed
+2021-11-24 02:20:13,309 INFO  [main] firefox opened
+2021-11-24 02:20:21,157 INFO  [main] GoogleCloudMainPage opened
+2021-11-24 02:20:36,496 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 02:20:43,505 INFO  [main] firefox closed
+2021-11-24 02:23:54,843 INFO  [main] firefox opened
+2021-11-24 02:24:03,054 INFO  [main] GoogleCloudMainPage opened
+2021-11-24 02:24:14,765 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 02:24:23,797 INFO  [main] firefox closed
+2021-11-24 02:26:24,580 INFO  [main] firefox opened
+2021-11-24 02:26:32,126 INFO  [main] GoogleCloudMainPage opened
+2021-11-24 02:26:46,605 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 02:26:56,553 INFO  [main] firefox closed
+2021-11-24 02:29:48,623 INFO  [main] chrome opened
+2021-11-24 02:30:00,445 INFO  [main] GoogleCloudMainPage opened
+2021-11-24 02:30:14,352 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 02:30:25,501 INFO  [main] Filling in estimation form completed
+2021-11-24 02:30:30,995 INFO  [main] TempEmailPage opened
+2021-11-24 02:30:31,459 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 02:30:58,219 INFO  [main] chrome closed
+2021-11-24 02:31:21,896 INFO  [main] chrome opened
+2021-11-24 02:31:29,547 INFO  [main] GoogleCloudMainPage opened
+2021-11-24 02:31:41,804 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 02:31:52,015 INFO  [main] Filling in estimation form completed
+2021-11-24 02:31:56,893 INFO  [main] TempEmailPage opened
+2021-11-24 02:31:57,439 INFO  [main] GoogleCloudPricingCalculatorPage opened
+2021-11-24 02:32:13,375 INFO  [main] Checking Email total cost against calculated total cost completed
+2021-11-24 02:32:16,355 INFO  [main] chrome closed

@@ -89,29 +89,29 @@ public class GoogleCloudPricingCalculatorPage extends AbstractPage {
         inputPurpose.clear();
 
         dropdownSoftware = driver.findElement(By.xpath(inputData.getDropdownSoftware()));
-        dropdownSoftware.click();
+        waitForWebElementVisible(dropdownSoftware).click();
         itemSoftware = driver.findElement(By.xpath(inputData.getItemSoftware()));
         waitForWebElementVisible(itemSoftware).click();
 
         dropdownClass = driver.findElement(By.xpath(inputData.getDropdownClass()));
-        dropdownClass.click();
+        waitForWebElementVisible(dropdownClass).click();
         itemClass = driver.findElement(By.xpath(inputData.getItemClass()));
         waitForWebElementVisible(itemClass).click();
 
         dropdownSeries = driver.findElement(By.xpath(inputData.getDropdownSeries()));
-        dropdownSeries.click();
+        waitForWebElementVisible(dropdownSeries).click();
         itemSeries = driver.findElement(By.xpath(inputData.getItemSeries()));
         waitForWebElementVisible(itemSeries).click();
 
         dropdownMachineType = driver.findElement(By.xpath(inputData.getDropdownMachineType()));
-        dropdownMachineType.click();
+        waitForWebElementVisible(dropdownMachineType).click();
         itemMachineType = driver.findElement(By.xpath(inputData.getItemMachineType()));
         waitForWebElementVisible(itemMachineType).click();
 
-        checkboxAddGPUs = driver.findElement(By.xpath(inputData.getCheckboxAddGPUs()));
-        checkboxAddGPUs.click();
-        dropboxGPUType = driver.findElement(By.xpath(inputData.getDropboxGPUType()));
-        dropboxGPUType.click();
+        checkboxAddGPUs = waitForWebElementVisible(driver.findElement(By.xpath(inputData.getCheckboxAddGPUs())));
+        waitForWebElementVisible(checkboxAddGPUs).click();
+        dropboxGPUType = waitForWebElementVisible(driver.findElement(By.xpath(inputData.getDropboxGPUType())));
+        waitForWebElementVisible(dropboxGPUType).click();
         itemGPUType = driver.findElement(By.xpath(inputData.getItemGPUType()));
         waitForWebElementVisible(itemGPUType).click();
         dropboxNumberOfGPUs = driver.findElement(By.xpath(inputData.getDropboxNumberOfGPUs()));
@@ -134,7 +134,6 @@ public class GoogleCloudPricingCalculatorPage extends AbstractPage {
         itemUsage = driver.findElement(By.xpath(inputData.getItemUsage()));
         waitForWebElementVisible(itemUsage).click();
 
-        logger.info("Data inputted");
         return this;
     }
 
