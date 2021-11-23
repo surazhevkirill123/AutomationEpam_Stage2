@@ -17,7 +17,7 @@ public class AbstractTest {
     @BeforeTest(alwaysRun = true)
     public void browserSetup() {
         if (System.getProperty("browser") == null){
-            System.setProperty("browser","firefox");
+            System.setProperty("browser","chrome");
         }
         if (System.getProperty("environment") == null){
             System.setProperty("environment","dev");

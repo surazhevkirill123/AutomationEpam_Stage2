@@ -6,6 +6,7 @@ import Hardcore.page.TempEmailPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class GoogleCloudTest extends AbstractTest {
@@ -15,7 +16,7 @@ public class GoogleCloudTest extends AbstractTest {
     TempEmailPage tempEmailPage;
     private final Logger logger = LogManager.getRootLogger();
 
-    @Test(description = "Fill in estimation form")
+    @BeforeClass(description = "Fill in estimation form")
     public void fillInEstimationForm() {
         cloudMainPage = new GoogleCloudMainPage(driver)
                 .openPage()
@@ -28,8 +29,7 @@ public class GoogleCloudTest extends AbstractTest {
         logger.info("Filling in estimation form completed");
     }
 
-    @Test(dependsOnMethods = {"fillInEstimationForm"},
-            description = "Check Email total cost against calculated total cost")
+    @Test(description = "Check Email total cost against calculated total cost")
     public void checkTotalCost() throws InterruptedException {
         tempEmailPage = new TempEmailPage(driver).openInNewTab();
         String tempEmail = tempEmailPage.getTempEMail();

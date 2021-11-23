@@ -4,6 +4,7 @@ import Hardcore.page.GoogleCloudMainPage;
 import Hardcore.page.GoogleCloudPricingCalculatorPage;
 import Hardcore.page.TempEmailPage;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class GoogleCloudTest extends AbstractTest {
@@ -12,7 +13,7 @@ public class GoogleCloudTest extends AbstractTest {
     GoogleCloudPricingCalculatorPage cloudCalculatorPage;
     TempEmailPage tempEmailPage;
 
-    @Test(description = "Fill in estimation form")
+    @BeforeClass(description = "Fill in estimation form")
     public void fillInEstimationForm() {
         cloudMainPage = new GoogleCloudMainPage(driver)
                 .openPage()
@@ -24,8 +25,7 @@ public class GoogleCloudTest extends AbstractTest {
                 .clickAddToEstimateButton();
     }
 
-    @Test(dependsOnMethods = {"fillInEstimationForm"},
-            description = "Check Email total cost against calculated total cost")
+    @Test(description = "Check Email total cost against calculated total cost")
     public void checkTotalCost() throws InterruptedException {
         tempEmailPage = new TempEmailPage(driver).openInNewTab();
         String tempEmail = tempEmailPage.getTempEMail();
