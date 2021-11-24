@@ -1,5 +1,6 @@
 package Hardcore.page;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -23,6 +24,16 @@ public abstract class AbstractPage {
         return new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS).until(ExpectedConditions.visibilityOf(element));
     }
 
+    public By waitForWebElementWithByVisible(By by) {
+        new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS).until(ExpectedConditions.visibilityOfElementLocated(by));
+        return by;
+    }
+
+    public WebElement findElementByDynamicXpath(String pattern, String value){
+        By itemSoftwareLocator = By.xpath(String.format(pattern, value));
+        return driver.findElement(waitForWebElementWithByVisible(itemSoftwareLocator));
+    }
+
     protected void openNewTab() {
         ((JavascriptExecutor) driver).executeScript("window.open()");
     }
@@ -40,4 +51,6 @@ public abstract class AbstractPage {
         int currentTabIndex = tabs.indexOf(currentTab);
         driver.switchTo().window(tabs.get(currentTabIndex + 1));
     }
+
+
 }

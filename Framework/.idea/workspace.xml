@@ -2,19 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ed0b142-716c-41f1-a3db-c59d0ef27d29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/result_Opera.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Hardcore/model/VMParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Hardcore/service/VMParametersCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/staging.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Hardcore/driver/DriverSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Hardcore/driver/DriverSingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Hardcore/model/InputData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Hardcore/page/AbstractPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Hardcore/page/AbstractPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Hardcore/page/GoogleCloudPricingCalculatorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Hardcore/page/GoogleCloudPricingCalculatorPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Hardcore/service/InputDataCreator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Hardcore/util/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Hardcore/util/TestListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng-all.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng-all.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/qa.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/qa.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/logs/github-automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/logs/github-automation.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Hardcore/driver/DriverSingleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Hardcore/driver/DriverSingleton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Hardcore/model/InputData.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Hardcore/page/AbstractPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Hardcore/page/AbstractPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Hardcore/page/GoogleCloudPricingCalculatorPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Hardcore/page/GoogleCloudPricingCalculatorPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Hardcore/page/TempEmailPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Hardcore/page/TempEmailPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Hardcore/service/InputDataCreator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Hardcore/util/TestListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Hardcore/util/TestListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testng-all.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testng-all.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/qa.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/qa.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,9 +86,8 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\STUDIES\AutomationEpam_Stage2\Framework\src\test\resources" />
-      <recent name="E:\STUDIES\AutomationEpam_Stage2\Framework\src\test\java" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="errorsAndExceptions" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\STUDIES\AutomationEpam_Stage2\Framework\src\test\resources" />
@@ -97,8 +102,9 @@
       <recent name="Properties" />
       <recent name="errorsAndExceptions" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="errorsAndExceptions" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\STUDIES\AutomationEpam_Stage2\Framework\src\test\resources" />
+      <recent name="E:\STUDIES\AutomationEpam_Stage2\Framework\src\test\java" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG.GoogleCloudTest">
@@ -232,7 +238,7 @@
       <workItem from="1637600521757" duration="6667000" />
       <workItem from="1637611612801" duration="2322000" />
       <workItem from="1637656113529" duration="547000" />
-      <workItem from="1637697039582" duration="9391000" />
+      <workItem from="1637697039582" duration="27666000" />
     </task>
     <servers />
   </component>
@@ -251,14 +257,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="699" y="330" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1635618629294" />
-    <state x="765" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1636368769784">
+    <state x="765" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1637771034934">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1636368769784" />
-    <state x="555" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1635239624682">
+    <state x="765" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1637771034934" />
+    <state x="424" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1637781411480">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="555" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1635239624682" />
+    <state x="424" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1637781411480" />
     <state x="690" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1635794986739">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -271,22 +277,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1635758019033" />
-    <state width="1877" height="283" key="GridCell.Tab.0.bottom" timestamp="1637710273459">
+    <state width="1877" height="283" key="GridCell.Tab.0.bottom" timestamp="1637782067345">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1637710273459" />
-    <state width="1877" height="283" key="GridCell.Tab.0.center" timestamp="1637710273459">
+    <state width="1877" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1637782067345" />
+    <state width="1877" height="283" key="GridCell.Tab.0.center" timestamp="1637782067345">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1637710273459" />
-    <state width="1877" height="283" key="GridCell.Tab.0.left" timestamp="1637710273459">
+    <state width="1877" height="283" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1637782067345" />
+    <state width="1877" height="283" key="GridCell.Tab.0.left" timestamp="1637782067345">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1637710273459" />
-    <state width="1877" height="283" key="GridCell.Tab.0.right" timestamp="1637710273459">
+    <state width="1877" height="283" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1637782067345" />
+    <state width="1877" height="283" key="GridCell.Tab.0.right" timestamp="1637782067345">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1637710273459" />
+    <state width="1877" height="283" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1637782067345" />
     <state x="490" y="178" key="Maven.ArtifactSearchDialog" timestamp="1635348681945">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

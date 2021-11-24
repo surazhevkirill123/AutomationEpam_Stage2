@@ -1,7 +1,7 @@
 package Hardcore.page;
 
-import Hardcore.model.InputData;
-import Hardcore.service.InputDataCreator;
+import Hardcore.model.VMParameters;
+import Hardcore.service.VMParametersCreator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -16,38 +16,61 @@ public class GoogleCloudPricingCalculatorPage extends AbstractPage {
     @FindBy(xpath = "//iframe[contains(@src, '/products/calculator')]")
     WebElement frameMain;
 
+    @FindBy(xpath = "//md-tab-item[@aria-controls='tab-content-1']")
     WebElement buttonComputeEngine;
 
+    @FindBy(xpath = "//input[@ng-model='listingCtrl.computeServer.quantity']")
     WebElement inputNumberOfInstances;
 
+    @FindBy(xpath = "//input[@ng-model='listingCtrl.computeServer.label']")
     WebElement inputPurpose;
 
+    @FindBy(xpath = "//md-select[@ng-model='listingCtrl.computeServer.os']")
     WebElement dropdownSoftware;
+    public static final String ITEM_SOFTWARE_LOCATOR_PATTERN = "//md-option[@value='%s']";
     WebElement itemSoftware;
 
+    @FindBy(xpath = "//md-select[@ng-model='listingCtrl.computeServer.class']")
     WebElement dropdownClass;
+    public static final String ITEM_CLASS_LOCATOR_PATTERN = "//md-select-menu[@style]/descendant::md-option[@value='%s']";
     WebElement itemClass;
 
+    @FindBy(xpath = "//md-select[@name='series']")
     WebElement dropdownSeries;
+    public static final String ITEM_SERIES_LOCATOR_PATTERN = "//md-option[@value='%s']";
     WebElement itemSeries;
 
+    @FindBy(xpath = "//md-select[@placeholder='Instance type']")
     WebElement dropdownMachineType;
+    public static final String ITEM_MACHINE_TYPE_LOCATOR_PATTERN = "//md-option[@value='%s']";
     WebElement itemMachineType;
 
+    @FindBy(xpath = "//md-checkbox[@aria-label='Add GPUs' and @ng-model='listingCtrl.computeServer.addGPUs']")
     WebElement checkboxAddGPUs;
-    WebElement dropboxGPUType;
-    WebElement itemGPUType;
+    @FindBy(xpath = "//md-select[@placeholder='Number of GPUs']")
     WebElement dropboxNumberOfGPUs;
+    public static final String ITEM_NUMBER_OF_GPUS_LOCATOR_PATTERN = "//md-option[@value='%s' and contains(@ng-repeat, 'gpuType')]";
     WebElement itemNumberOfGPUs;
+    @FindBy(xpath = "//md-select[@placeholder='GPU type']")
+    WebElement dropboxGPUType;
+    public static final String ITEM_GPU_TYPE_LOCATOR_PATTERN = "//md-option[@value='%s']";
+    WebElement itemGPUType;
 
+    @FindBy(xpath = "//md-select[@placeholder='Local SSD']")
     WebElement dropdownSSD;
+    public static final String ITEM_SSD_LOCATOR_PATTERN = "//md-option[@value='%s' and contains(@ng-repeat, 'item in listingCtrl.dynamicSsd.computeServer')]";
     WebElement itemSSD;
 
+    @FindBy(xpath = "//md-select[@placeholder='Datacenter location'][@ng-model='listingCtrl.computeServer.location']")
     WebElement dropdownLocation;
+    public static final String ITEM_LOCATION_LOCATOR_PATTERN = "//md-select-menu[@class='md-overflow']/descendant::md-option[@value='%s' and contains(@ng-repeat, 'item in listingCtrl.fullRegionList')]";
     WebElement itemLocation;
 
+    @FindBy(xpath = "//md-select[@placeholder='Committed usage']")
     WebElement dropdownUsage;
+    public static final String ITEM_USAGE_LOCATOR_PATTERN = "//div[@class='md-select-menu-container md-active md-clickable']/descendant::md-option[@ng-value='%s']";
     WebElement itemUsage;
+
 
     @FindBy(xpath = "//button[@aria-label='Add to Estimate' and contains(@ng-click, 'addComputeServer')]")
     WebElement buttonAddToEstimate;
@@ -76,62 +99,51 @@ public class GoogleCloudPricingCalculatorPage extends AbstractPage {
     }
 
     public GoogleCloudPricingCalculatorPage fillInEstimationForm() {
-        InputData inputData = InputDataCreator.InputDataCreateDefault();
+        VMParameters vmParameters = VMParametersCreator.VMParametersCreate();
 
-        buttonComputeEngine = driver.findElement(By.xpath(inputData.getButtonComputeEngine()));
-        buttonComputeEngine.click();
+        waitForWebElementVisible(buttonComputeEngine).click();
+        String instances = vmParameters.getInstances();
 
-        inputNumberOfInstances = driver.findElement(By.xpath(inputData.getInputNumberOfInstances()));
-        String instances = inputData.getInstances();
-        inputNumberOfInstances.sendKeys(instances);
+        waitForWebElementVisible(inputNumberOfInstances).sendKeys(instances);
 
-        inputPurpose = driver.findElement(By.xpath(inputData.getInputPurpose()));
-        inputPurpose.clear();
+        waitForWebElementVisible(inputPurpose).clear();
 
-        dropdownSoftware = driver.findElement(By.xpath(inputData.getDropdownSoftware()));
         waitForWebElementVisible(dropdownSoftware).click();
-        itemSoftware = driver.findElement(By.xpath(inputData.getItemSoftware()));
+        itemSoftware = findElementByDynamicXpath(ITEM_SOFTWARE_LOCATOR_PATTERN, vmParameters.getItemSoftware());
         waitForWebElementVisible(itemSoftware).click();
 
-        dropdownClass = driver.findElement(By.xpath(inputData.getDropdownClass()));
         waitForWebElementVisible(dropdownClass).click();
-        itemClass = driver.findElement(By.xpath(inputData.getItemClass()));
+        itemClass = findElementByDynamicXpath(ITEM_CLASS_LOCATOR_PATTERN, vmParameters.getItemClass());
         waitForWebElementVisible(itemClass).click();
 
-        dropdownSeries = driver.findElement(By.xpath(inputData.getDropdownSeries()));
         waitForWebElementVisible(dropdownSeries).click();
-        itemSeries = driver.findElement(By.xpath(inputData.getItemSeries()));
+        itemSeries = findElementByDynamicXpath(ITEM_SERIES_LOCATOR_PATTERN, vmParameters.getItemSeries());
         waitForWebElementVisible(itemSeries).click();
 
-        dropdownMachineType = driver.findElement(By.xpath(inputData.getDropdownMachineType()));
         waitForWebElementVisible(dropdownMachineType).click();
-        itemMachineType = driver.findElement(By.xpath(inputData.getItemMachineType()));
+        itemMachineType = findElementByDynamicXpath(ITEM_MACHINE_TYPE_LOCATOR_PATTERN, vmParameters.getItemMachineType());
         waitForWebElementVisible(itemMachineType).click();
 
-        checkboxAddGPUs = waitForWebElementVisible(driver.findElement(By.xpath(inputData.getCheckboxAddGPUs())));
         waitForWebElementVisible(checkboxAddGPUs).click();
-        dropboxGPUType = waitForWebElementVisible(driver.findElement(By.xpath(inputData.getDropboxGPUType())));
+
         waitForWebElementVisible(dropboxGPUType).click();
-        itemGPUType = driver.findElement(By.xpath(inputData.getItemGPUType()));
+        itemGPUType = findElementByDynamicXpath(ITEM_GPU_TYPE_LOCATOR_PATTERN, vmParameters.getItemGPUType());
         waitForWebElementVisible(itemGPUType).click();
-        dropboxNumberOfGPUs = driver.findElement(By.xpath(inputData.getDropboxNumberOfGPUs()));
+
         waitForWebElementVisible(dropboxNumberOfGPUs).click();
-        itemNumberOfGPUs = driver.findElement(By.xpath(inputData.getItemNumberOfGPUs()));
+        itemNumberOfGPUs = findElementByDynamicXpath(ITEM_NUMBER_OF_GPUS_LOCATOR_PATTERN, vmParameters.getItemNumberOfGPUs());
         waitForWebElementVisible(itemNumberOfGPUs).click();
 
-        dropdownSSD = driver.findElement(By.xpath(inputData.getDropdownSSD()));
-        dropdownSSD.click();
-        itemSSD = driver.findElement(By.xpath(inputData.getItemSSD()));
+        waitForWebElementVisible(dropdownSSD).click();
+        itemSSD = findElementByDynamicXpath(ITEM_SSD_LOCATOR_PATTERN, vmParameters.getItemSSD());
         waitForWebElementVisible(itemSSD).click();
 
-        dropdownLocation = driver.findElement(By.xpath(inputData.getDropdownLocation()));
-        dropdownLocation.click();
-        itemLocation = driver.findElement(By.xpath(inputData.getItemLocation()));
+        waitForWebElementVisible(dropdownLocation).click();
+        itemLocation = findElementByDynamicXpath(ITEM_LOCATION_LOCATOR_PATTERN, vmParameters.getItemLocation());
         waitForWebElementVisible(itemLocation).click();
 
-        dropdownUsage = driver.findElement(By.xpath(inputData.getDropdownUsage()));
         waitForWebElementVisible(dropdownUsage).click();
-        itemUsage = driver.findElement(By.xpath(inputData.getItemUsage()));
+        itemUsage = findElementByDynamicXpath(ITEM_USAGE_LOCATOR_PATTERN, vmParameters.getItemUsage());
         waitForWebElementVisible(itemUsage).click();
 
         return this;
